@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIA Test Preparation — Federal Investigation Agency, Pakistan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green-deep:#0B3D2E;
+    --green-line:#143F30;
+    --cream:#FAFAF7;
+    --sage:#E8EDE7;
+    --gold:#B8860B;
+    --gold-light:#D4A93A;
+    --ink:#1A1A1A;
+    --ink-soft:#4A4F4C;
+    --red:#A13D2E;
+    --green-ok:#2F5D45;
+    --border:#D8DCD4;
+    --shadow: 0 1px 3px rgba(11,61,46,0.08), 0 8px 24px rgba(11,61,46,0.06);
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+
+  body{
+    margin:0;
+    background:var(--cream);
+    color:var(--ink);
+    font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  h1,h2,h3,.display{
+    font-family:'Lora', Georgia, 'Times New Roman', serif;
+  }
+
+  a{color:inherit;}
+
+  body{
+    background-image:
+      radial-gradient(circle at 1px 1px, rgba(11,61,46,0.035) 1px, transparent 0);
+    background-size: 22px 22px;
+  }
+
+  .gazette-bar{
+    background:var(--green-deep);
+    color:var(--cream);
+    font-size:12.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    text-align:center;
+    padding:7px 12px;
+    font-weight:500;
+    border-bottom:3px solid var(--gold);
+  }
+
+  header.masthead{
+    max-width:880px;
+    margin:0 auto;
+    padding:46px 24px 30px;
+    text-align:center;
+    position:relative;
+  }
+
+  .seal{
+    width:74px;height:74px;
+    margin:0 auto 18px;
+    border-radius:50%;
+    background:
+      radial-gradient(circle at 35% 30%, var(--gold-light), var(--gold) 60%, #8a6406 100%);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow: 0 4px 14px rgba(184,134,11,0.35), inset 0 2px 4px rgba(255,255,255,0.4), inset 0 -3px 6px rgba(0,0,0,0.25);
+    position:relative;
+  }
+  .seal::before{
+    content:'';
+    position:absolute;
+    width:86px;height:86px;
+    border:1.5px dashed rgba(184,134,11,0.45);
+    border-radius:50%;
+  }
+  .seal svg{width:36px;height:36px;fill:var(--cream);}
+
+  .eyebrow{
+    font-size:12px;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--gold);
+    font-weight:600;
+    margin-bottom:10px;
+  }
+
+  h1.title{
+    font-size:clamp(32px,5vw,48px);
+    margin:0 0 10px;
+    color:var(--green-deep);
+    font-weight:600;
+    letter-spacing:-0.01em;
+    line-height:1.1;
+  }
+
+  .subtitle{
+    font-size:16.5px;
+    color:var(--ink-soft);
+    max-width:560px;
+    margin:0 auto 22px;
+    line-height:1.6;
+  }
+
+  .file-stamp{
+    display:inline-flex;
+    gap:10px;
+    align-items:center;
+    border:1.5px solid var(--green-deep);
+    color:var(--green-deep);
+    padding:8px 18px;
+    border-radius:3px;
+    font-size:13px;
+    letter-spacing:0.04em;
+    text-transform:uppercase;
+    font-weight:600;
+    transform:rotate(-1deg);
+  }
+  .file-stamp .dot{width:6px;height:6px;border-radius:50%;background:var(--red);}
+
+  .rule{
+    max-width:880px;
+    margin:0 auto;
+    border:none;
+    border-top:1px solid var(--border);
+    position:relative;
+  }
+  .rule::after{
+    content:'§';
+    position:absolute;
+    left:50%;top:-11px;
+    transform:translateX(-50%);
+    background:var(--cream);
+    color:var(--gold);
+    padding:0 12px;
+    font-size:16px;
+  }
+
+  .brief{
+    max-width:880px;
+    margin:38px auto;
+    padding:0 24px;
+  }
+
+  .brief-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:14px;
+    margin-top:26px;
+  }
+  @media(max-width:720px){.brief-grid{grid-template-columns:repeat(2,1fr);}}
+
+  .stat-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-top:3px solid var(--gold);
+    border-radius:6px;
+    padding:18px 16px;
+    box-shadow:var(--shadow);
+  }
+  .stat-card .num{
+    font-family:'Lora',serif;
+    font-size:26px;
+    color:var(--green-deep);
+    font-weight:600;
+    display:block;
+  }
+  .stat-card .lbl{
+    font-size:12px;
+    color:var(--ink-soft);
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    margin-top:4px;
+    display:block;
+  }
+
+  .brief h2{
+    font-size:22px;
+    color:var(--green-deep);
+    margin-bottom:8px;
+  }
+  .brief p{
+    color:var(--ink-soft);
+    line-height:1.7;
+    font-size:15px;
+  }
+
+  /* ===== Subject selection screen ===== */
+  .selector-wrap{
+    max-width:880px;
+    margin:0 auto 70px;
+    padding:0 24px;
+  }
+  .selector-wrap h2{
+    font-size:22px;
+    color:var(--green-deep);
+    margin-bottom:6px;
+    text-align:center;
+  }
+  .selector-sub{
+    text-align:center;
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin-bottom:30px;
+  }
+
+  .subject-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+    margin-bottom:30px;
+  }
+  @media(max-width:760px){.subject-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:480px){.subject-grid{grid-template-columns:1fr;}}
+
+  .subject-card{
+    background:#fff;
+    border:1.5px solid var(--border);
+    border-radius:8px;
+    padding:20px 18px;
+    cursor:pointer;
+    text-align:left;
+    transition:border-color .15s, transform .15s, box-shadow .15s;
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+  .subject-card:hover{border-color:var(--gold-light); transform:translateY(-2px);}
+  .subject-card.selected{border-color:var(--green-deep); background:var(--sage);}
+  .subject-card.selected::after{
+    content:'✓';
+    position:absolute;
+    top:14px; right:14px;
+    width:22px;height:22px;
+    background:var(--green-deep);
+    color:#fff;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:12px;
+    font-weight:700;
+  }
+  .subject-card .icon{
+    font-family:'Lora',serif;
+    font-size:13px;
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:0.06em;
+    font-weight:700;
+    margin-bottom:8px;
+  }
+  .subject-card .name{
+    font-family:'Lora',serif;
+    font-size:17px;
+    color:var(--ink);
+    font-weight:600;
+    margin-bottom:4px;
+  }
+  .subject-card .count{
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
+
+  .count-row{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:14px;
+    margin-bottom:34px;
+    flex-wrap:wrap;
+  }
+  .count-row label{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    font-weight:600;
+  }
+  .count-pill-group{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+  }
+  .count-pill{
+    border:1.5px solid var(--border);
+    background:#fff;
+    color:var(--ink-soft);
+    padding:8px 18px;
+    border-radius:20px;
+    font-size:13.5px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all .15s;
+  }
+  .count-pill:hover{border-color:var(--gold-light);}
+  .count-pill.selected{background:var(--green-deep); color:#fff; border-color:var(--green-deep);}
+
+  .selector-footer{
+    text-align:center;
+  }
+  .selector-hint{
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-bottom:18px;
+  }
+
+  /* ===== Start panel ===== */
+  .start-panel{
+    max-width:600px;
+    margin:40px auto 70px;
+    padding:0 24px;
+    text-align:center;
+  }
+  .start-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:38px 30px;
+    box-shadow:var(--shadow);
+  }
+  .start-card h3{
+    color:var(--green-deep);
+    font-size:21px;
+    margin:0 0 8px;
+  }
+  .start-card p{
+    color:var(--ink-soft);
+    font-size:14.5px;
+    margin:0 0 22px;
+    line-height:1.6;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    background:var(--green-deep);
+    color:var(--cream);
+    border:none;
+    padding:15px 32px;
+    font-size:15.5px;
+    font-weight:600;
+    border-radius:5px;
+    cursor:pointer;
+    letter-spacing:0.02em;
+    transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+    font-family:'Inter',sans-serif;
+  }
+  .btn:hover{background:#0F4C39; transform:translateY(-1px); box-shadow:0 6px 16px rgba(11,61,46,0.25);}
+  .btn:active{transform:translateY(0);}
+  .btn:focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+  .btn:disabled{opacity:0.5; cursor:not-allowed; transform:none; box-shadow:none;}
+  .btn-ghost{
+    background:transparent;
+    color:var(--green-deep);
+    border:1.5px solid var(--green-deep);
+  }
+  .btn-ghost:hover{background:var(--sage);}
+  .btn-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+
+  /* ===== Quiz screen ===== */
+  .quiz-wrap{
+    max-width:760px;
+    margin:0 auto;
+    padding:30px 24px 80px;
+    display:none;
+  }
+  .quiz-wrap.active{display:block;}
+  .hidden{display:none !important;}
+
+  .quiz-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    margin-bottom:14px;
+    flex-wrap:wrap;
+    gap:8px;
+  }
+  .case-no{
+    font-family:'Lora',serif;
+    color:var(--green-deep);
+    font-weight:600;
+    font-size:15px;
+  }
+  .case-no span{color:var(--gold);}
+  .timer{
+    font-size:13.5px;
+    color:var(--ink-soft);
+    font-variant-numeric:tabular-nums;
+  }
+  .timer.warn{color:var(--red); font-weight:600;}
+
+  .progress-track{
+    height:8px;
+    background:var(--sage);
+    border-radius:5px;
+    overflow:hidden;
+    margin-bottom:30px;
+    border:1px solid var(--border);
+  }
+  .progress-fill{
+    height:100%;
+    background:linear-gradient(90deg, var(--green-deep), var(--green-ok));
+    border-radius:5px;
+    transition:width .35s ease;
+    width:0%;
+  }
+
+  .q-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:8px;
+    padding:30px 28px;
+    box-shadow:var(--shadow);
+    position:relative;
+    overflow:hidden;
+  }
+  .q-card::before{
+    content:'';
+    position:absolute;
+    top:0;left:0;
+    width:5px;height:100%;
+    background:var(--gold);
+  }
+  .q-meta{
+    font-size:11.5px;
+    text-transform:uppercase;
+    letter-spacing:0.07em;
+    color:var(--gold);
+    font-weight:700;
+    margin-bottom:10px;
+  }
+  .q-text{
+    font-family:'Lora',serif;
+    font-size:19px;
+    line-height:1.5;
+    color:var(--ink);
+    margin:0 0 24px;
+    font-weight:500;
+  }
+
+  .options{display:flex;flex-direction:column;gap:11px;}
+  .option{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    border:1.5px solid var(--border);
+    border-radius:6px;
+    padding:13px 16px;
+    cursor:pointer;
+    background:var(--cream);
+    transition:border-color .15s, background .15s;
+    font-size:15px;
+    text-align:left;
+  }
+  .option:hover{border-color:var(--gold-light); background:#fff;}
+  .option .letter{
+    width:26px;height:26px;
+    border-radius:50%;
+    border:1.5px solid var(--ink-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-size:12.5px;
+    font-weight:600;
+    color:var(--ink-soft);
+    flex-shrink:0;
+    transition:all .15s;
+  }
+  .option.selected{border-color:var(--green-deep); background:var(--sage);}
+  .option.selected .letter{background:var(--green-deep); color:#fff; border-color:var(--green-deep);}
+
+  .option.correct{border-color:var(--green-ok); background:#EAF3EC;}
+  .option.correct .letter{background:var(--green-ok); color:#fff; border-color:var(--green-ok);}
+  .option.incorrect{border-color:var(--red); background:#F8EBE8;}
+  .option.incorrect .letter{background:var(--red); color:#fff; border-color:var(--red);}
+  .option:disabled, .option[disabled]{cursor:default;}
+
+  .explain{
+    margin-top:18px;
+    padding:14px 16px;
+    background:var(--sage);
+    border-left:3px solid var(--green-deep);
+    border-radius:4px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+    line-height:1.6;
+    display:none;
+  }
+  .explain.show{display:block;}
+  .explain b{color:var(--green-deep);}
+
+  .quiz-nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:22px;
+  }
+  .quiz-nav .btn{padding:12px 26px; font-size:14.5px;}
+  .flag-counter{font-size:13px; color:var(--ink-soft);}
+
+  /* ===== Results screen ===== */
+  .results-wrap{
+    max-width:680px;
+    margin:0 auto;
+    padding:50px 24px 80px;
+    display:none;
+    text-align:center;
+  }
+  .results-wrap.active{display:block;}
+
+  .certificate{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius:10px;
+    padding:46px 36px;
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+  .certificate::before{
+    content:'';
+    position:absolute;
+    inset:14px;
+    border:1px dashed var(--border);
+    border-radius:6px;
+    pointer-events:none;
+  }
+
+  .score-ring{
+    width:150px;height:150px;
+    margin:0 auto 22px;
+    position:relative;
+  }
+  .score-ring svg{transform:rotate(-90deg);}
+  .score-ring .bg{stroke:var(--sage);}
+  .score-ring .fg{stroke:var(--green-deep); transition:stroke-dashoffset 1s ease;}
+  .score-ring .score-label{
+    position:absolute;inset:0;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+  }
+  .score-ring .score-pct{font-family:'Lora',serif; font-size:34px; font-weight:600; color:var(--green-deep);}
+  .score-ring .score-sub{font-size:11px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.05em;}
+
+  .verdict{
+    font-family:'Lora',serif;
+    font-size:23px;
+    color:var(--green-deep);
+    font-weight:600;
+    margin-bottom:6px;
+  }
+  .verdict-sub{color:var(--ink-soft); font-size:14.5px; margin-bottom:30px;}
+
+  .score-breakdown{
+    display:flex;
+    justify-content:center;
+    gap:28px;
+    margin-bottom:32px;
+    flex-wrap:wrap;
+  }
+  .score-breakdown div{text-align:center;}
+  .score-breakdown .n{font-family:'Lora',serif; font-size:24px; font-weight:600;}
+  .score-breakdown .l{font-size:11.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:0.04em;}
+  .n.ok{color:var(--green-ok);}
+  .n.bad{color:var(--red);}
+  .n.skip{color:#9a8d5f;}
+
+  .category-bars{
+    text-align:left;
+    margin:0 0 30px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+  }
+  .cat-row{display:flex; align-items:center; gap:12px;}
+  .cat-row .cat-name{font-size:13px; width:150px; flex-shrink:0; color:var(--ink-soft); text-align:right;}
+  .cat-row .cat-track{flex:1; height:9px; background:var(--sage); border-radius:5px; overflow:hidden;}
+  .cat-row .cat-fill{height:100%; background:var(--green-deep); border-radius:5px;}
+  .cat-row .cat-pct{font-size:12.5px; color:var(--ink-soft); width:36px; flex-shrink:0;}
+
+  /* ===== Review list ===== */
+  .review-wrap{
+    max-width:760px;
+    margin:40px auto 0;
+    padding:0 24px;
+    display:none;
+    text-align:left;
+  }
+  .review-wrap.active{display:block;}
+  .review-wrap h3{color:var(--green-deep); font-size:20px; margin-bottom:18px;}
+  .review-item{
+    background:#fff;
+    border:1px solid var(--border);
+    border-left:4px solid var(--border);
+    border-radius:6px;
+    padding:18px 20px;
+    margin-bottom:12px;
+  }
+  .review-item.ok{border-left-color:var(--green-ok);}
+  .review-item.bad{border-left-color:var(--red);}
+  .review-item .rq{font-family:'Lora',serif; font-size:15.5px; margin-bottom:8px;}
+  .review-item .ra{font-size:13.5px; color:var(--ink-soft); line-height:1.6;}
+  .review-item .ra b{color:var(--ink);}
+  .review-item .tag{
+    display:inline-block;
+    font-size:10.5px;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    font-weight:700;
+    padding:2px 8px;
+    border-radius:3px;
+    margin-bottom:8px;
+  }
+  .tag.ok{background:#EAF3EC; color:var(--green-ok);}
+  .tag.bad{background:#F8EBE8; color:var(--red);}
+
+  footer{
+    text-align:center;
+    padding:30px 24px 50px;
+    font-size:12.5px;
+    color:#8a9189;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{transition:none !important; animation:none !important;}
+  }
+
+  .sr-only{
+    position:absolute; width:1px; height:1px;
+    padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;
+  }
+</style>
+</head>
+<body>
+
+<div class="gazette-bar">Federal Investigation Agency &middot; Recruitment &amp; Promotion Examination Preparation</div>
+
+<header class="masthead" id="masthead">
+  <div class="seal">
+    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 2.18l7 3.12v4.7c0 4.52-2.98 8.69-7 9.85-4.02-1.16-7-5.33-7-9.85V6.3l7-3.12zM11 7v6h2V7h-2zm0 8v2h2v-2h-2z"/></svg>
+  </div>
+  <div class="eyebrow">Mock Test &middot; Self-Assessment Tool</div>
+  <h1 class="title">FIA Test Preparation</h1>
+  <p class="subtitle">A practice examination built around the actual pattern used for FIA recruitment and promotion tests — with a bank of 600 questions across six subject areas, so you can practise a fresh set every time.</p>
+  <div class="file-stamp"><span class="dot"></span> Practice File No. PK-FIA-2026</div>
+</header>
+
+<hr class="rule">
+
+<section class="brief" id="brief">
+  <h2>Before you begin</h2>
+  <p>This mock test mirrors the structure candidates report from real FIA written examinations: single-best-answer multiple choice questions drawn from the subjects the agency tests most often. Choose a subject and a question count below, answer at your own pace, review the explanation after each question, and check your performance breakdown at the end.</p>
+
+  <div class="brief-grid">
+    <div class="stat-card"><span class="num" id="statTotal">600</span><span class="lbl">Total questions</span></div>
+    <div class="stat-card"><span class="num">6</span><span class="lbl">Subject areas</span></div>
+    <div class="stat-card"><span class="num">100</span><span class="lbl">Per subject</span></div>
+    <div class="stat-card"><span class="num">MCQ</span><span class="lbl">Single best answer</span></div>
+  </div>
+</section>
+
+<section class="selector-wrap" id="selectorWrap">
+  <h2>Choose a subject</h2>
+  <p class="selector-sub">Pick one area to focus on, or select Mixed Practice to draw from all six.</p>
+
+  <div class="subject-grid" id="subjectGrid"></div>
+
+  <div class="count-row">
+    <label>Number of questions:</label>
+    <div class="count-pill-group" id="countGroup">
+      <button class="count-pill" data-count="10">10</button>
+      <button class="count-pill selected" data-count="20">20</button>
+      <button class="count-pill" data-count="30">30</button>
+      <button class="count-pill" data-count="50">50</button>
+      <button class="count-pill" data-count="100">100</button>
+    </div>
+  </div>
+
+  <div class="selector-footer">
+    <p class="selector-hint" id="selectorHint">Select a subject above to begin.</p>
+    <button class="btn" id="startBtn" disabled>Start the Practice Test &rarr;</button>
+  </div>
+</section>
+
+<div class="quiz-wrap" id="quizWrap">
+  <div class="quiz-top">
+    <div class="case-no">Question <span id="qCurrent">1</span> of <span id="qTotal">20</span></div>
+    <div class="timer" id="timer">00:00 elapsed</div>
+  </div>
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+
+  <div class="q-card">
+    <div class="q-meta" id="qCategory">Pakistan Studies</div>
+    <p class="q-text" id="qText">Question text goes here</p>
+    <div class="options" id="qOptions"></div>
+    <div class="explain" id="qExplain"></div>
+  </div>
+
+  <div class="quiz-nav">
+    <span class="flag-counter" id="flagCounter"></span>
+    <button class="btn" id="nextBtn" disabled>Next Question &rarr;</button>
+  </div>
+</div>
+
+<div class="results-wrap" id="resultsWrap">
+  <div class="certificate">
+    <div class="eyebrow">Examination Result</div>
+    <div class="score-ring">
+      <svg width="150" height="150" viewBox="0 0 150 150">
+        <circle class="bg" cx="75" cy="75" r="65" fill="none" stroke-width="12"/>
+        <circle class="fg" id="scoreCircle" cx="75" cy="75" r="65" fill="none" stroke-width="12" stroke-linecap="round"/>
+      </svg>
+      <div class="score-label">
+        <span class="score-pct" id="scorePct">0%</span>
+        <span class="score-sub">Score</span>
+      </div>
+    </div>
+    <div class="verdict" id="verdict">—</div>
+    <div class="verdict-sub" id="verdictSub">—</div>
+
+    <div class="score-breakdown">
+      <div><span class="n ok" id="cntCorrect">0</span><span class="l">Correct</span></div>
+      <div><span class="n bad" id="cntWrong">0</span><span class="l">Incorrect</span></div>
+      <div><span class="n skip" id="cntSkip">0</span><span class="l">Skipped</span></div>
+    </div>
+
+    <div class="category-bars" id="categoryBars"></div>
+
+    <div class="btn-row">
+      <button class="btn" id="reviewBtn">Review Answers</button>
+      <button class="btn btn-ghost" id="retakeBtn">Try Another Set</button>
+    </div>
+  </div>
+</div>
+
+<div class="review-wrap" id="reviewWrap">
+  <h3>Answer Review</h3>
+  <div id="reviewList"></div>
+</div>
+
+<footer>Practice material for self-preparation purposes &middot; Not an official FIA publication</footer>
+
+<script>
+const PAKISTAN_STUDIES = [
+{q:"On what date was Pakistan declared an Islamic Republic under its first Constitution?", opts:["14 August 1947","23 March 1956","23 March 1940","27 October 1958"], a:1, ex:"Pakistan's first Constitution, enforced on 23 March 1956, declared the country an Islamic Republic."},
+{q:"Who was the first Governor-General of Pakistan?", opts:["Liaquat Ali Khan","Sir Khawaja Nazimuddin","Muhammad Ali Jinnah","Iskander Mirza"], a:2, ex:"Muhammad Ali Jinnah served as Pakistan's first Governor-General from August 1947 until his death in September 1948."},
+{q:"The Lahore Resolution, later known as the 'Pakistan Resolution', was passed in which year?", opts:["1930","1940","1946","1947"], a:1, ex:"The Lahore Resolution was passed on 23 March 1940 at the All-India Muslim League session."},
+{q:"Which river is the longest in Pakistan?", opts:["Jhelum","Chenab","Indus","Ravi"], a:2, ex:"The Indus River, running about 3,180 km overall, is the longest river flowing through Pakistan."},
+{q:"Gwadar Port, a key part of CPEC, is located in which province?", opts:["Sindh","Punjab","Balochistan","Khyber Pakhtunkhwa"], a:2, ex:"Gwadar Port lies on the Arabian Sea coast of Balochistan."},
+{q:"The national flower of Pakistan is the:", opts:["Rose","Tulip","Jasmine","Lily"], a:2, ex:"Jasmine (Chambeli) is recognised as Pakistan's national flower."},
+{q:"Who is regarded as having first articulated ideas that underpin the two-nation theory?", opts:["Allama Iqbal","Sir Syed Ahmad Khan","Liaquat Ali Khan","Sir Agha Khan"], a:1, ex:"Sir Syed Ahmad Khan is widely credited with first articulating ideas underpinning the two-nation theory, well before Iqbal's 1930 Allahabad Address."},
+{q:"K2, the second-highest peak in the world, is located in which mountain range in Pakistan?", opts:["Hindukush","Himalayas","Karakoram","Sulaiman"], a:2, ex:"K2 is part of the Karakoram range in Gilgit-Baltistan."},
+{q:"Which city served as the capital of Pakistan before Islamabad was built?", opts:["Lahore","Karachi","Rawalpindi","Peshawar"], a:1, ex:"Karachi was Pakistan's capital from 1947 until Islamabad was developed and the capital relocated in the 1960s."},
+{q:"The Objectives Resolution, a foundational document for Pakistan's constitutions, was passed in which year?", opts:["1949","1952","1956","1962"], a:0, ex:"The Objectives Resolution was moved by Liaquat Ali Khan and adopted by the Constituent Assembly in March 1949."},
+{q:"Who is known as the 'Quaid-e-Azam' of Pakistan?", opts:["Liaquat Ali Khan","Allama Iqbal","Muhammad Ali Jinnah","Sir Syed Ahmad Khan"], a:2, ex:"Muhammad Ali Jinnah is honoured with the title Quaid-e-Azam, meaning 'Great Leader'."},
+{q:"Pakistan's national anthem was written by:", opts:["Faiz Ahmed Faiz","Hafeez Jalandhari","Allama Iqbal","Ahmed Faraz"], a:1, ex:"Hafeez Jalandhari wrote the lyrics of Pakistan's national anthem, 'Qaumi Taranah'."},
+{q:"Who composed the music for Pakistan's national anthem?", opts:["Ahmed G. Chagla","Khurshid Anwar","Nisar Bazmi","A. Hameed"], a:0, ex:"The tune of the national anthem was composed by Ahmed G. Chagla in 1949, before the lyrics were finalised."},
+{q:"In which year did Pakistan become a nuclear power, conducting its first nuclear tests?", opts:["1971","1989","1998","2001"], a:2, ex:"Pakistan conducted its first nuclear tests at Chagai in May 1998."},
+{q:"The Chagai nuclear test site is located in which province?", opts:["Sindh","Balochistan","Punjab","Khyber Pakhtunkhwa"], a:1, ex:"The Chagai Hills, site of Pakistan's 1998 nuclear tests, are in Balochistan."},
+{q:"Which Pakistani region is known as the 'Land of Five Rivers'?", opts:["Sindh","Punjab","Balochistan","Kashmir"], a:1, ex:"Punjab derives its name from Persian words meaning 'five waters', referring to its five rivers."},
+{q:"The Indus Valley Civilisation site of Mohenjo-daro is located in which present-day province?", opts:["Punjab","Sindh","Balochistan","Khyber Pakhtunkhwa"], a:1, ex:"Mohenjo-daro, one of the largest Indus Valley settlements, lies in Sindh near the Indus River."},
+{q:"Harappa, another major Indus Valley Civilisation site, is located in which province?", opts:["Sindh","Punjab","Balochistan","Kashmir"], a:1, ex:"Harappa is situated in Punjab, in present-day Sahiwal District."},
+{q:"Which mountain pass historically connected Pakistan with Afghanistan and was used by invading armies and traders?", opts:["Khunjerab Pass","Khyber Pass","Bolan Pass","Lowari Pass"], a:1, ex:"The Khyber Pass, between Pakistan and Afghanistan, has been a historic trade and invasion route for centuries."},
+{q:"The Bolan Pass, another important historic route, is located in which province?", opts:["Khyber Pakhtunkhwa","Punjab","Balochistan","Sindh"], a:2, ex:"The Bolan Pass lies in Balochistan and connects it with Afghanistan."},
+{q:"Who was the first Prime Minister of Pakistan?", opts:["Liaquat Ali Khan","Khawaja Nazimuddin","Muhammad Ali Bogra","Chaudhry Muhammad Ali"], a:0, ex:"Liaquat Ali Khan served as Pakistan's first Prime Minister from 1947 until his assassination in 1951."},
+{q:"In which year was Liaquat Ali Khan assassinated?", opts:["1948","1951","1953","1958"], a:1, ex:"Liaquat Ali Khan was assassinated in Rawalpindi in October 1951."},
+{q:"Which Pakistani province is the largest by area?", opts:["Punjab","Sindh","Balochistan","Khyber Pakhtunkhwa"], a:2, ex:"Balochistan is Pakistan's largest province by land area, though Punjab has the highest population."},
+{q:"Which province of Pakistan has the highest population?", opts:["Sindh","Punjab","Balochistan","Khyber Pakhtunkhwa"], a:1, ex:"Punjab is Pakistan's most populous province by a wide margin."},
+{q:"The Tarbela Dam, one of the largest earth-filled dams in the world, is built on which river?", opts:["Jhelum","Chenab","Indus","Kabul"], a:2, ex:"Tarbela Dam is constructed on the Indus River in Khyber Pakhtunkhwa."},
+{q:"The Mangla Dam is built on which river?", opts:["Indus","Jhelum","Chenab","Ravi"], a:1, ex:"Mangla Dam, one of the largest dams in the world by structural volume, is built on the Jhelum River."},
+{q:"Which Pakistani city is known as the 'City of Lights'?", opts:["Lahore","Karachi","Multan","Faisalabad"], a:1, ex:"Karachi is popularly known as the 'City of Lights' due to its vibrant nightlife and commercial activity."},
+{q:"Lahore is often referred to as the:", opts:["City of Saints","Heart of Pakistan","City of Gardens","City of Quaid"], a:2, ex:"Lahore is traditionally known as the 'City of Gardens' for its many historic gardens, including Shalimar Gardens."},
+{q:"Multan in Punjab is traditionally known as the:", opts:["City of Saints","City of Lights","City of Colleges","City of Gardens"], a:0, ex:"Multan is often called the 'City of Saints' due to the numerous Sufi shrines located there."},
+{q:"Which city is known as the 'City of Colleges' in Pakistan?", opts:["Lahore","Karachi","Hyderabad","Multan"], a:0, ex:"Lahore is traditionally known as the 'City of Colleges' due to its concentration of historic educational institutions."},
+{q:"Faisalabad, a major industrial city, was previously known by which name?", opts:["Lyallpur","Montgomery","Campbellpur","Jacobabad"], a:0, ex:"Faisalabad was known as Lyallpur during British rule before being renamed in 1977."},
+{q:"Which Pakistani city is the country's main seaport and financial hub?", opts:["Gwadar","Karachi","Port Qasim","Hyderabad"], a:1, ex:"Karachi remains Pakistan's largest seaport and primary financial and commercial centre."},
+{q:"Pakistan's currency, the Rupee, is issued by which institution?", opts:["Ministry of Finance","State Bank of Pakistan","National Bank of Pakistan","Pakistan Mint"], a:1, ex:"The State Bank of Pakistan is the central bank responsible for currency issuance and monetary policy."},
+{q:"In which year was the State Bank of Pakistan established?", opts:["1947","1948","1950","1956"], a:1, ex:"The State Bank of Pakistan began operations on 1 July 1948."},
+{q:"Which Pakistani glacier is among the longest outside the polar regions?", opts:["Siachen Glacier","Baltoro Glacier","Biafo Glacier","Hispar Glacier"], a:1, ex:"The Baltoro Glacier in Gilgit-Baltistan is one of the longest glaciers outside polar regions."},
+{q:"Siachen Glacier, the site of a long-standing military standoff, lies between Pakistan and which country?", opts:["China","Afghanistan","India","Iran"], a:2, ex:"The Siachen Glacier in the Karakoram range has been disputed territory between Pakistan and India since 1984."},
+{q:"Which Pakistani region is administered separately and known for K2 and other high peaks?", opts:["Azad Kashmir","Gilgit-Baltistan","FATA","Hazara"], a:1, ex:"Gilgit-Baltistan hosts K2 and several other peaks above 8,000 metres."},
+{q:"Pakistan's flag was adopted on which date?", opts:["14 August 1947","11 August 1947","23 March 1940","27 October 1947"], a:1, ex:"Pakistan's national flag was adopted by the Constituent Assembly on 11 August 1947."},
+{q:"What does the white portion of Pakistan's flag represent?", opts:["Peace","Minorities","Agriculture","Industry"], a:1, ex:"The white stripe on the flag represents the religious minorities of Pakistan."},
+{q:"What do the crescent and star on Pakistan's flag symbolise?", opts:["Progress and light","Agriculture and industry","Unity and faith","Freedom and justice"], a:0, ex:"The crescent represents progress and the five-pointed star represents light and knowledge."},
+{q:"Who designed Pakistan's national flag?", opts:["Liaquat Ali Khan","Syed Amir-uddin Kedwaii","Muhammad Ali Jinnah","Hafeez Jalandhari"], a:1, ex:"The national flag's design is credited to Syed Amir-uddin Kedwaii, based on the All-India Muslim League flag."},
+{q:"Which Pakistani Prime Minister nationalised major industries in the 1970s?", opts:["Zulfikar Ali Bhutto","Liaquat Ali Khan","Muhammad Khan Junejo","Nawaz Sharif"], a:0, ex:"Zulfikar Ali Bhutto's government nationalised banks and major industries in the early 1970s."},
+{q:"In which year did East Pakistan separate to become Bangladesh?", opts:["1969","1970","1971","1972"], a:2, ex:"East Pakistan became the independent state of Bangladesh in December 1971."},
+{q:"Who was Pakistan's president during the 1971 war?", opts:["Ayub Khan","Yahya Khan","Zulfikar Ali Bhutto","Ghulam Ishaq Khan"], a:1, ex:"General Yahya Khan was President of Pakistan during the 1971 war and the country's split."},
+{q:"Which Pakistani general led the country's first martial law in 1958?", opts:["Ayub Khan","Yahya Khan","Zia-ul-Haq","Pervez Musharraf"], a:0, ex:"General Ayub Khan imposed Pakistan's first martial law in October 1958."},
+{q:"General Zia-ul-Haq came to power in a military coup in which year?", opts:["1969","1977","1985","1988"], a:1, ex:"General Zia-ul-Haq took power in a coup against Zulfikar Ali Bhutto's government in July 1977."},
+{q:"Who became Pakistan's first female Prime Minister?", opts:["Fatima Jinnah","Benazir Bhutto","Asma Jahangir","Tehmina Durrani"], a:1, ex:"Benazir Bhutto became Pakistan's first female Prime Minister in 1988."},
+{q:"Pervez Musharraf seized power in a military coup in which year?", opts:["1997","1999","2001","2002"], a:1, ex:"General Pervez Musharraf took control of the government in a coup in October 1999."},
+{q:"Which Pakistani city is the country's capital?", opts:["Karachi","Lahore","Islamabad","Rawalpindi"], a:2, ex:"Islamabad has served as Pakistan's capital since the 1960s."},
+{q:"The Constitution currently in force in Pakistan was adopted in which year?", opts:["1956","1962","1973","1985"], a:2, ex:"The 1973 Constitution, with various amendments, remains Pakistan's governing constitution."},
+{q:"How many provinces does Pakistan currently have?", opts:["Three","Four","Five","Six"], a:1, ex:"Pakistan has four provinces: Punjab, Sindh, Khyber Pakhtunkhwa, and Balochistan."},
+{q:"Azad Jammu and Kashmir and Gilgit-Baltistan are categorised as:", opts:["Provinces","Federal territories","Self-governing administrative regions","Union territories"], a:2, ex:"AJK and Gilgit-Baltistan are self-governing territories with their own administrative setups, distinct from the four provinces."},
+{q:"Which institution is the upper house of Pakistan's Parliament?", opts:["National Assembly","Senate","Supreme Court","Provincial Assembly"], a:1, ex:"The Senate is the upper house of Pakistan's bicameral Parliament; the National Assembly is the lower house."},
+{q:"How many members does the Senate of Pakistan have, as commonly cited under recent arrangements?", opts:["100","104","96","112"], a:1, ex:"The Senate of Pakistan has 104 members, drawn equally from the four provinces along with federal and other seats."},
+{q:"Which house of Pakistan's Parliament is directly elected by the general public?", opts:["Senate","National Assembly","Both equally","Neither"], a:1, ex:"Members of the National Assembly are elected through direct general elections, unlike Senate members."},
+{q:"The Supreme Court of Pakistan is located in:", opts:["Lahore","Karachi","Islamabad","Peshawar"], a:2, ex:"Pakistan's Supreme Court is headquartered in Islamabad, with registries in other major cities."},
+{q:"Who serves as the ceremonial Head of State of Pakistan?", opts:["Prime Minister","President","Chief Justice","Speaker of National Assembly"], a:1, ex:"The President of Pakistan is the ceremonial Head of State, while the Prime Minister is the chief executive."},
+{q:"Which Pakistani region is famous for the Khewra Salt Mines, among the largest in the world?", opts:["Sindh","Punjab","Balochistan","Khyber Pakhtunkhwa"], a:1, ex:"Khewra Salt Mines are located in Punjab and are among the world's oldest and largest salt mines."},
+{q:"The Thar Desert, a major desert region of Pakistan, lies primarily in which province?", opts:["Punjab","Sindh","Balochistan","Khyber Pakhtunkhwa"], a:1, ex:"The Thar Desert lies mostly in Sindh, extending into India as well."},
+{q:"Which Pakistani pass connects Chitral with the Wakhan Corridor and Central Asia?", opts:["Khyber Pass","Lowari Pass","Broghil Pass","Bolan Pass"], a:2, ex:"The Broghil Pass in Chitral connects northern Pakistan toward the Wakhan Corridor and Central Asia."},
+{q:"Pakistan's national language is:", opts:["Punjabi","Sindhi","Urdu","Pashto"], a:2, ex:"Urdu is Pakistan's national language, while English serves as an official language alongside it."},
+{q:"Which language has the largest number of native speakers in Pakistan?", opts:["Urdu","Punjabi","Sindhi","Pashto"], a:1, ex:"Punjabi has the largest number of native speakers among Pakistan's languages."},
+{q:"The Faisal Mosque, one of the largest mosques in the world, is located in:", opts:["Lahore","Karachi","Islamabad","Multan"], a:2, ex:"The Faisal Mosque, funded by Saudi Arabia, is located in Islamabad and is among the largest mosques globally."},
+{q:"The Badshahi Mosque, a Mughal-era landmark, is located in:", opts:["Multan","Lahore","Thatta","Peshawar"], a:1, ex:"The Badshahi Mosque was built by Mughal Emperor Aurangzeb and is located in Lahore."},
+{q:"Who built the Shalimar Gardens in Lahore?", opts:["Akbar","Jahangir","Shah Jahan","Aurangzeb"], a:2, ex:"The Shalimar Gardens were laid out by Mughal Emperor Shah Jahan in the 17th century."},
+{q:"The Minar-e-Pakistan, commemorating the Lahore Resolution, is located in:", opts:["Iqbal Park, Lahore","Jinnah Park, Karachi","Liaquat Garden, Rawalpindi","Shalimar Park, Lahore"], a:0, ex:"Minar-e-Pakistan stands in Iqbal Park (formerly Minto Park), Lahore, marking the site of the 1940 Lahore Resolution."},
+{q:"Allama Iqbal's mausoleum is located near which monument in Lahore?", opts:["Badshahi Mosque","Minar-e-Pakistan","Lahore Fort","Wazir Khan Mosque"], a:0, ex:"Allama Iqbal's tomb lies near the Badshahi Mosque in Lahore."},
+{q:"Quaid-e-Azam Muhammad Ali Jinnah's mausoleum is located in:", opts:["Islamabad","Lahore","Karachi","Quetta"], a:2, ex:"Jinnah's mausoleum, Mazar-e-Quaid, is located in Karachi."},
+{q:"Which battle is associated with the historic resistance led by Muhammad Bin Qasim entering Sindh?", opts:["Battle of Multan","Battle of Debal","Battle of Sehwan","Battle of Aror"], a:1, ex:"Muhammad Bin Qasim's conquest of Sindh in 712 CE began with the capture of Debal."},
+{q:"Mahmud of Ghazni's invasions into the Indian subcontinent began around which century?", opts:["8th century","10th century","12th century","14th century"], a:1, ex:"Mahmud of Ghazni led repeated invasions into South Asia starting around the early 11th century, with roots in the late 10th century."},
+{q:"The Mughal Empire in South Asia was founded by:", opts:["Akbar","Babur","Humayun","Shah Jahan"], a:1, ex:"Babur founded the Mughal Empire after the First Battle of Panipat in 1526."},
+{q:"Which Mughal emperor built the Lahore Fort's famous Sheesh Mahal?", opts:["Akbar","Jahangir","Shah Jahan","Aurangzeb"], a:2, ex:"The Sheesh Mahal in Lahore Fort was constructed under Shah Jahan."},
+{q:"The All-India Muslim League was founded in which year?", opts:["1885","1906","1916","1920"], a:1, ex:"The All-India Muslim League was founded in Dhaka in December 1906."},
+{q:"The Indian National Congress, a key political counterpart to the Muslim League, was founded in which year?", opts:["1885","1906","1916","1947"], a:0, ex:"The Indian National Congress was founded in 1885, predating the Muslim League by about two decades."},
+{q:"The Simla Deputation of 1906, seeking separate Muslim representation, was led by:", opts:["Sir Syed Ahmad Khan","Aga Khan III","Muhammad Ali Jinnah","Liaquat Ali Khan"], a:1, ex:"The Simla Deputation, which sought separate electorates for Muslims, was led by Aga Khan III."},
+{q:"The system of separate electorates for Muslims was formally granted under which act?", opts:["Indian Councils Act 1909","Government of India Act 1935","Indian Independence Act 1947","Rowlatt Act 1919"], a:0, ex:"The Indian Councils Act of 1909 (Morley-Minto Reforms) introduced separate electorates for Muslims."},
+{q:"The Government of India Act, which formed the basis for Pakistan's early governance after 1947, was passed in which year?", opts:["1909","1919","1935","1942"], a:2, ex:"The Government of India Act 1935 served as the interim constitutional framework for Pakistan until 1956."},
+{q:"The Cripps Mission, sent to negotiate with Indian leaders during WWII, arrived in which year?", opts:["1939","1942","1945","1946"], a:1, ex:"The Cripps Mission arrived in India in March 1942 to negotiate wartime political cooperation."},
+{q:"The Cabinet Mission Plan, a key step before partition, was presented in which year?", opts:["1942","1945","1946","1947"], a:2, ex:"The Cabinet Mission Plan was presented in 1946 to discuss the transfer of power and constitutional arrangements."},
+{q:"Direct Action Day, called by the Muslim League to press for Pakistan, was observed on:", opts:["16 August 1946","23 March 1946","3 June 1947","14 July 1947"], a:0, ex:"Direct Action Day was observed on 16 August 1946, following the Muslim League's call."},
+{q:"The 3 June Plan, which laid out the partition timeline, was announced in which year?", opts:["1946","1947","1948","1945"], a:1, ex:"The 3 June 1947 Plan, also called the Mountbatten Plan, set out the basis for partition."},
+{q:"Who was the last Viceroy of British India, overseeing the transfer of power?", opts:["Lord Wavell","Lord Mountbatten","Lord Linlithgow","Lord Irwin"], a:1, ex:"Lord Mountbatten served as the last Viceroy of British India and oversaw partition in 1947."},
+{q:"The Radcliffe Line, which demarcated the border between India and Pakistan, was drawn by:", opts:["Cyril Radcliffe","Lord Mountbatten","Stafford Cripps","Lord Wavell"], a:0, ex:"Cyril Radcliffe chaired the boundary commission that drew the partition line bearing his name."},
+{q:"The Indian Independence Act, granting independence to India and Pakistan, was passed by the British Parliament in which year?", opts:["1946","1947","1948","1950"], a:1, ex:"The Indian Independence Act 1947 formally ended British rule and created the two independent states."},
+{q:"Which two princely states' accession disputes led to long-running conflicts after partition?", opts:["Hyderabad and Junagadh","Kashmir and Hyderabad","Kashmir and Junagadh","Bahawalpur and Kashmir"], a:1, ex:"The accession of Jammu and Kashmir, along with Hyderabad, became major disputed issues after 1947, with Kashmir remaining unresolved between Pakistan and India."},
+{q:"The first Kashmir war between Pakistan and India took place in which year?", opts:["1947-48","1955","1965","1971"], a:0, ex:"The first India-Pakistan war over Kashmir was fought in 1947-48, shortly after independence."},
+{q:"The 1965 war between Pakistan and India ended with which agreement?", opts:["Simla Agreement","Tashkent Declaration","Karachi Agreement","Lahore Declaration"], a:1, ex:"The 1965 war was formally ended through the Tashkent Declaration, mediated by the Soviet Union."},
+{q:"The Simla Agreement, signed after the 1971 war, was signed between which two leaders?", opts:["Bhutto and Indira Gandhi","Ayub Khan and Nehru","Yahya Khan and Indira Gandhi","Zia and Rajiv Gandhi"], a:0, ex:"The 1972 Simla Agreement was signed by Zulfikar Ali Bhutto and Indira Gandhi following the 1971 war."},
+{q:"The Lahore Declaration of 1999 was signed between Pakistan and India under which Pakistani Prime Minister?", opts:["Benazir Bhutto","Nawaz Sharif","Shaukat Aziz","Imran Khan"], a:1, ex:"The Lahore Declaration was signed in 1999 during Nawaz Sharif's tenure, alongside Indian PM Atal Bihari Vajpayee."},
+{q:"The Kargil conflict between Pakistan and India took place in which year?", opts:["1989","1999","2001","2008"], a:1, ex:"The Kargil conflict occurred in 1999 in the Kargil district of Kashmir."},
+{q:"Which Pakistani city hosts the headquarters of the Pakistan Army?", opts:["Islamabad","Lahore","Rawalpindi","Peshawar"], a:2, ex:"The General Headquarters (GHQ) of the Pakistan Army is located in Rawalpindi."},
+{q:"Pakistan's space agency is known as:", opts:["PARC","SUPARCO","NESPAK","PCSIR"], a:1, ex:"SUPARCO (Space and Upper Atmosphere Research Commission) is Pakistan's national space agency."},
+{q:"Which Pakistani scientist is associated with the country's nuclear weapons programme?", opts:["Dr. Abdul Qadeer Khan","Dr. Abdus Salam","Dr. Atta-ur-Rahman","Dr. Samar Mubarakmand"], a:0, ex:"Dr. Abdul Qadeer Khan is widely credited as a key figure in Pakistan's nuclear weapons programme."},
+{q:"Which Pakistani scientist won the Nobel Prize in Physics?", opts:["A.Q. Khan","Abdus Salam","Atta-ur-Rahman","Samar Mubarakmand"], a:1, ex:"Dr. Abdus Salam won the Nobel Prize in Physics in 1979, the first Pakistani Nobel laureate."},
+{q:"Malala Yousafzai, a Nobel Peace Prize laureate from Pakistan, is from which city?", opts:["Peshawar","Swat","Abbottabad","Mardan"], a:1, ex:"Malala Yousafzai is from the Swat Valley in Khyber Pakhtunkhwa."},
+{q:"Which Pakistani peak is the highest mountain entirely within the country?", opts:["Nanga Parbat","K2","Tirich Mir","Rakaposhi"], a:1, ex:"K2 is the highest peak in Pakistan and the second-highest in the world."},
+{q:"Which Pakistani lake is known for its turquoise waters and is located in Gilgit-Baltistan?", opts:["Saif-ul-Malook","Attabad Lake","Manchar Lake","Keenjhar Lake"], a:1, ex:"Attabad Lake, formed after a 2010 landslide, is located in Hunza, Gilgit-Baltistan."},
+{q:"Lake Saif-ul-Malook is located near which valley?", opts:["Swat Valley","Kaghan Valley","Hunza Valley","Neelum Valley"], a:1, ex:"Lake Saif-ul-Malook lies in the Kaghan Valley of Khyber Pakhtunkhwa."},
+{q:"Pakistan's national sport is:", opts:["Cricket","Hockey","Squash","Kabaddi"], a:1, ex:"Field hockey is officially Pakistan's national sport, despite cricket's greater popularity."},
+{q:"In which year did Pakistan win the Cricket World Cup for the first time?", opts:["1987","1992","1996","1999"], a:1, ex:"Pakistan won its first Cricket World Cup in 1992 under captain Imran Khan."}
+];
+const GENERAL_KNOWLEDGE = [
+{q:"The headquarters of the United Nations is located in:", opts:["Geneva","New York","Washington D.C.","The Hague"], a:1, ex:"The UN's main headquarters complex is in New York City, USA."},
+{q:"Which is the smallest country in the world by land area?", opts:["Monaco","San Marino","Vatican City","Liechtenstein"], a:2, ex:"Vatican City, at roughly 0.49 sq km, is the world's smallest sovereign state."},
+{q:"The currency of Japan is the:", opts:["Won","Yuan","Yen","Ringgit"], a:2, ex:"Japan's official currency is the Yen (JPY)."},
+{q:"Mount Everest is located on the border of Nepal and which other country?", opts:["Bhutan","China (Tibet)","India","Pakistan"], a:1, ex:"Mount Everest sits on the Nepal–China (Tibet Autonomous Region) border."},
+{q:"Which organ in the human body is primarily responsible for filtering blood and producing urine?", opts:["Liver","Lungs","Kidneys","Pancreas"], a:2, ex:"The kidneys filter waste from blood and regulate fluid balance, producing urine as a byproduct."},
+{q:"The Great Barrier Reef, the world's largest coral reef system, is located off the coast of:", opts:["Brazil","Australia","Indonesia","South Africa"], a:1, ex:"The Great Barrier Reef lies off the coast of Queensland, Australia."},
+{q:"Which gas makes up the largest percentage of Earth's atmosphere?", opts:["Oxygen","Carbon dioxide","Nitrogen","Argon"], a:2, ex:"Nitrogen makes up about 78% of Earth's atmosphere, followed by oxygen at roughly 21%."},
+{q:"The largest ocean in the world by area is the:", opts:["Atlantic Ocean","Indian Ocean","Arctic Ocean","Pacific Ocean"], a:3, ex:"The Pacific Ocean is the largest and deepest of the world's oceans."},
+{q:"Which is the longest river in the world?", opts:["Amazon River","Nile River","Yangtze River","Mississippi River"], a:1, ex:"The Nile River, at roughly 6,650 km, is generally regarded as the world's longest river."},
+{q:"The Sahara, the world's largest hot desert, is located primarily in:", opts:["Middle East","North Africa","Central Asia","Southern Africa"], a:1, ex:"The Sahara Desert spans much of North Africa, covering parts of countries like Algeria, Libya, and Egypt."},
+{q:"Which country has the largest population in the world?", opts:["China","India","United States","Indonesia"], a:1, ex:"India surpassed China to become the world's most populous country in recent years."},
+{q:"Which is the largest country in the world by land area?", opts:["Canada","China","United States","Russia"], a:3, ex:"Russia is the largest country by land area, spanning eleven time zones."},
+{q:"The capital of Australia is:", opts:["Sydney","Melbourne","Canberra","Perth"], a:2, ex:"Canberra, not Sydney or Melbourne, is the capital city of Australia."},
+{q:"The capital of Canada is:", opts:["Toronto","Vancouver","Ottawa","Montreal"], a:2, ex:"Ottawa serves as Canada's capital, while Toronto is its largest city."},
+{q:"The capital of Brazil is:", opts:["Rio de Janeiro","Sao Paulo","Brasilia","Salvador"], a:2, ex:"Brasilia was purpose-built and became Brazil's capital in 1960."},
+{q:"The capital of Turkey is:", opts:["Istanbul","Ankara","Izmir","Bursa"], a:1, ex:"Ankara is the capital of Turkey, while Istanbul is its largest city."},
+{q:"The capital of Egypt is:", opts:["Alexandria","Cairo","Giza","Luxor"], a:1, ex:"Cairo is the capital and largest city of Egypt."},
+{q:"The capital of South Korea is:", opts:["Busan","Incheon","Seoul","Daegu"], a:2, ex:"Seoul is the capital and most populous city of South Korea."},
+{q:"Which planet is known as the 'Red Planet'?", opts:["Venus","Mars","Jupiter","Mercury"], a:1, ex:"Mars is called the 'Red Planet' due to iron oxide on its surface giving it a reddish appearance."},
+{q:"Which is the largest planet in our solar system?", opts:["Saturn","Neptune","Jupiter","Uranus"], a:2, ex:"Jupiter is the largest planet in the solar system by both mass and volume."},
+{q:"Which planet is closest to the Sun?", opts:["Venus","Mercury","Earth","Mars"], a:1, ex:"Mercury is the closest planet to the Sun in our solar system."},
+{q:"The chemical symbol for gold is:", opts:["Go","Gd","Au","Ag"], a:2, ex:"Gold's chemical symbol, Au, comes from its Latin name 'aurum'."},
+{q:"The chemical symbol for silver is:", opts:["Si","Ag","Sv","Sl"], a:1, ex:"Silver's chemical symbol, Ag, comes from the Latin 'argentum'."},
+{q:"Water is composed of which two elements?", opts:["Hydrogen and Oxygen","Helium and Oxygen","Hydrogen and Nitrogen","Carbon and Oxygen"], a:0, ex:"A water molecule (H2O) consists of two hydrogen atoms and one oxygen atom."},
+{q:"Which blood type is known as the 'universal donor'?", opts:["A","B","AB","O negative"], a:3, ex:"O negative blood lacks A, B, and Rh antigens, making it compatible with most recipients in emergencies."},
+{q:"The human heart has how many chambers?", opts:["Two","Three","Four","Five"], a:2, ex:"The human heart has four chambers: two atria and two ventricles."},
+{q:"Which vitamin is primarily produced by the body when exposed to sunlight?", opts:["Vitamin A","Vitamin C","Vitamin D","Vitamin K"], a:2, ex:"Vitamin D is synthesised in the skin through exposure to sunlight."},
+{q:"The study of living organisms is called:", opts:["Geology","Biology","Botany","Zoology"], a:1, ex:"Biology is the broad scientific study of living organisms, encompassing botany, zoology, and other branches."},
+{q:"The study of celestial bodies and outer space is called:", opts:["Astrology","Astronomy","Cosmology","Geography"], a:1, ex:"Astronomy is the scientific study of stars, planets, and other celestial phenomena."},
+{q:"Which is the hardest naturally occurring substance on Earth?", opts:["Gold","Iron","Diamond","Quartz"], a:2, ex:"Diamond, a crystalline form of carbon, is the hardest known natural material."},
+{q:"The speed of light in a vacuum is approximately:", opts:["300,000 km/s","150,000 km/s","3,000 km/s","1,000,000 km/s"], a:0, ex:"Light travels at approximately 299,792 km per second in a vacuum, commonly rounded to 300,000 km/s."},
+{q:"Which scientist developed the theory of general relativity?", opts:["Isaac Newton","Albert Einstein","Niels Bohr","Galileo Galilei"], a:1, ex:"Albert Einstein published his theory of general relativity in 1915."},
+{q:"Isaac Newton is best known for formulating laws of:", opts:["Relativity","Motion and gravitation","Thermodynamics","Evolution"], a:1, ex:"Newton's three laws of motion and his theory of universal gravitation form the foundation of classical mechanics."},
+{q:"Charles Darwin is best known for his theory of:", opts:["Relativity","Evolution by natural selection","Genetics","Atomic structure"], a:1, ex:"Charles Darwin proposed the theory of evolution by natural selection, detailed in 'On the Origin of Species'."},
+{q:"Which scientist is credited with discovering penicillin?", opts:["Louis Pasteur","Alexander Fleming","Robert Koch","Edward Jenner"], a:1, ex:"Alexander Fleming discovered penicillin in 1928, leading to the development of antibiotics."},
+{q:"Which is the largest mammal on Earth?", opts:["African Elephant","Blue Whale","Giraffe","Hippopotamus"], a:1, ex:"The blue whale is the largest animal known to have ever existed, including all mammals."},
+{q:"Which is the fastest land animal?", opts:["Lion","Cheetah","Horse","Greyhound"], a:1, ex:"The cheetah is the fastest land animal, capable of reaching speeds over 100 km/h."},
+{q:"The Eiffel Tower is located in which city?", opts:["London","Paris","Rome","Berlin"], a:1, ex:"The Eiffel Tower is one of Paris's most iconic landmarks, built in 1889."},
+{q:"The Statue of Liberty is located in which city?", opts:["Washington D.C.","Los Angeles","New York City","Boston"], a:2, ex:"The Statue of Liberty stands on Liberty Island in New York Harbor."},
+{q:"The Great Wall of China was built primarily to:", opts:["Control trade routes","Defend against invasions","Mark territorial boundaries for taxation","Serve as a religious monument"], a:1, ex:"The Great Wall of China was constructed mainly as a defensive fortification against northern invasions."},
+{q:"The Taj Mahal, a famous mausoleum, is located in which country?", opts:["Pakistan","India","Bangladesh","Iran"], a:1, ex:"The Taj Mahal is located in Agra, India, built by Mughal Emperor Shah Jahan."},
+{q:"The Colosseum, an ancient amphitheatre, is located in:", opts:["Athens","Rome","Istanbul","Cairo"], a:1, ex:"The Colosseum is located in Rome, Italy, and was used for gladiatorial contests in ancient times."},
+{q:"Which is the tallest building in the world as of recent record?", opts:["Shanghai Tower","Burj Khalifa","One World Trade Center","Petronas Towers"], a:1, ex:"The Burj Khalifa in Dubai is the tallest building in the world, standing over 828 metres."},
+{q:"Which country is home to the Burj Khalifa?", opts:["Saudi Arabia","Qatar","United Arab Emirates","Kuwait"], a:2, ex:"The Burj Khalifa is located in Dubai, United Arab Emirates."},
+{q:"The Amazon Rainforest is located primarily in which country?", opts:["Peru","Colombia","Brazil","Venezuela"], a:2, ex:"The majority of the Amazon Rainforest lies within Brazil, though it spans several South American countries."},
+{q:"Which sea is the saltiest large body of water in the world?", opts:["Red Sea","Dead Sea","Caspian Sea","Mediterranean Sea"], a:1, ex:"The Dead Sea has an extremely high salt concentration, making it one of the saltiest bodies of water on Earth."},
+{q:"Which African country is the most populous?", opts:["Egypt","Nigeria","Ethiopia","South Africa"], a:1, ex:"Nigeria is Africa's most populous country, with over 200 million people."},
+{q:"Which is the longest mountain range in the world?", opts:["Himalayas","Rocky Mountains","Andes","Alps"], a:2, ex:"The Andes, stretching along the western coast of South America, is the longest continental mountain range."},
+{q:"Which country has the most time zones?", opts:["Russia","United States","France","China"], a:2, ex:"France, including its overseas territories, spans the most time zones of any country—12 in total."},
+{q:"Which is the world's largest island?", opts:["Madagascar","Borneo","Greenland","New Guinea"], a:2, ex:"Greenland is the world's largest island, excluding mainland continents."},
+{q:"The Olympic Games are held every how many years?", opts:["Two","Three","Four","Five"], a:2, ex:"Both the Summer and Winter Olympic Games are held every four years."},
+{q:"In which city were the first modern Olympic Games held in 1896?", opts:["Paris","London","Athens","Rome"], a:2, ex:"The first modern Olympic Games were held in Athens, Greece, in 1896."},
+{q:"FIFA, the international football governing body, is headquartered in:", opts:["Paris","Geneva","Zurich","Brussels"], a:2, ex:"FIFA is headquartered in Zurich, Switzerland."},
+{q:"Which sport is most associated with Wimbledon?", opts:["Golf","Tennis","Cricket","Rugby"], a:1, ex:"Wimbledon is one of the four Grand Slam tournaments in tennis."},
+{q:"The 'Big Apple' is a nickname for which city?", opts:["Los Angeles","Chicago","New York City","Boston"], a:2, ex:"New York City is popularly nicknamed the 'Big Apple'."},
+{q:"Which country is known as the 'Land of the Rising Sun'?", opts:["China","South Korea","Japan","Thailand"], a:2, ex:"Japan is traditionally known as the 'Land of the Rising Sun' due to its eastern position relative to Asia."},
+{q:"Which country is known as the 'Land of a Thousand Lakes'?", opts:["Sweden","Finland","Norway","Canada"], a:1, ex:"Finland is often called the 'Land of a Thousand Lakes' due to its many lakes."},
+{q:"Which is the official language of Brazil?", opts:["Spanish","Portuguese","French","Italian"], a:1, ex:"Portuguese is the official language of Brazil, a legacy of Portuguese colonisation."},
+{q:"The World Health Organization (WHO) is headquartered in:", opts:["New York","Geneva","Paris","Vienna"], a:1, ex:"The WHO is headquartered in Geneva, Switzerland."},
+{q:"UNESCO, the UN body focused on education, science, and culture, is headquartered in:", opts:["New York","Geneva","Paris","Rome"], a:2, ex:"UNESCO's headquarters are located in Paris, France."},
+{q:"The International Court of Justice is located in:", opts:["Geneva","New York","The Hague","Brussels"], a:2, ex:"The International Court of Justice sits in The Hague, Netherlands."},
+{q:"Which is the official currency of the European Union's eurozone members?", opts:["Pound","Franc","Euro","Mark"], a:2, ex:"The Euro is the official currency used by most member states of the European Union."},
+{q:"NASA, the American space agency, was established in which year?", opts:["1947","1958","1961","1969"], a:1, ex:"NASA (National Aeronautics and Space Administration) was established in 1958."},
+{q:"Which was the first man-made satellite launched into space?", opts:["Apollo 11","Sputnik 1","Voyager 1","Explorer 1"], a:1, ex:"Sputnik 1, launched by the Soviet Union in 1957, was the first artificial satellite."},
+{q:"Who was the first person to walk on the Moon?", opts:["Buzz Aldrin","Yuri Gagarin","Neil Armstrong","John Glenn"], a:2, ex:"Neil Armstrong became the first person to walk on the Moon during the Apollo 11 mission in 1969."},
+{q:"Who was the first human to travel into space?", opts:["Neil Armstrong","Yuri Gagarin","John Glenn","Alan Shepard"], a:1, ex:"Yuri Gagarin, a Soviet cosmonaut, became the first human in space in 1961."},
+{q:"Which is the closest star to Earth, other than the Sun?", opts:["Sirius","Proxima Centauri","Alpha Centauri A","Betelgeuse"], a:1, ex:"Proxima Centauri is the closest known star to the Sun, part of the Alpha Centauri system."},
+{q:"What is the boiling point of water at sea level in Celsius?", opts:["90°C","95°C","100°C","110°C"], a:2, ex:"Water boils at 100°C (212°F) at standard atmospheric pressure at sea level."},
+{q:"What is the freezing point of water in Celsius?", opts:["0°C","-5°C","5°C","-10°C"], a:0, ex:"Water freezes at 0°C (32°F) under standard atmospheric conditions."},
+{q:"Which is the smallest planet in our solar system?", opts:["Mars","Mercury","Venus","Pluto"], a:1, ex:"Mercury is the smallest planet in our solar system, since Pluto was reclassified as a dwarf planet."},
+{q:"Which gas do plants primarily absorb during photosynthesis?", opts:["Oxygen","Nitrogen","Carbon dioxide","Hydrogen"], a:2, ex:"Plants absorb carbon dioxide and release oxygen during photosynthesis."},
+{q:"The Great Pyramid of Giza was built primarily as a:", opts:["Temple","Royal tomb","Astronomical observatory","Fortress"], a:1, ex:"The Great Pyramid of Giza was constructed as a tomb for the Pharaoh Khufu."},
+{q:"Which ancient civilisation built the pyramids of Giza?", opts:["Mesopotamians","Egyptians","Romans","Greeks"], a:1, ex:"The ancient Egyptians constructed the pyramids of Giza as royal tombs."},
+{q:"Which is the world's largest desert overall, including cold deserts?", opts:["Sahara Desert","Arabian Desert","Antarctic Desert","Gobi Desert"], a:2, ex:"The Antarctic Desert is technically the largest desert in the world by area, as deserts are defined by low precipitation, not just heat."},
+{q:"Which country gifted the Statue of Liberty to the United States?", opts:["Britain","France","Spain","Italy"], a:1, ex:"France gifted the Statue of Liberty to the United States in 1886 to mark friendship between the two nations."},
+{q:"Which is the most widely spoken native language in the world?", opts:["English","Spanish","Mandarin Chinese","Hindi"], a:2, ex:"Mandarin Chinese has the largest number of native speakers of any language in the world."},
+{q:"Which continent is the largest by land area?", opts:["Africa","Asia","North America","Europe"], a:1, ex:"Asia is the largest continent by both land area and population."},
+{q:"Which continent has the smallest land area?", opts:["Europe","Antarctica","Australia (Oceania)","South America"], a:2, ex:"Australia, as a continent, has the smallest land area among the continents."},
+{q:"Which country is the world's largest producer of coffee?", opts:["Colombia","Vietnam","Brazil","Ethiopia"], a:2, ex:"Brazil has long been the world's largest coffee producer."},
+{q:"Which is the world's largest producer of crude oil among recent rankings?", opts:["Saudi Arabia","Russia","United States","Iran"], a:2, ex:"The United States has been among the world's largest crude oil producers in recent years, alongside Saudi Arabia and Russia."},
+{q:"The Panama Canal connects which two oceans?", opts:["Atlantic and Pacific","Indian and Pacific","Atlantic and Indian","Arctic and Pacific"], a:0, ex:"The Panama Canal links the Atlantic Ocean and the Pacific Ocean, significantly shortening maritime routes."},
+{q:"The Suez Canal connects the Mediterranean Sea with which body of water?", opts:["Arabian Sea","Red Sea","Black Sea","Persian Gulf"], a:1, ex:"The Suez Canal connects the Mediterranean Sea to the Red Sea, providing a shorter route between Europe and Asia."},
+{q:"Which country is the world's largest archipelago nation?", opts:["Philippines","Japan","Indonesia","Maldives"], a:2, ex:"Indonesia, made up of over 17,000 islands, is the world's largest archipelagic state."},
+{q:"Which African country was never colonised by a European power, with a brief Italian occupation as an exception?", opts:["Kenya","Ethiopia","Ghana","Nigeria"], a:1, ex:"Ethiopia is often cited as having avoided long-term European colonisation, aside from a brief Italian occupation in the late 1930s."},
+{q:"Which European country is known as the birthplace of the Renaissance?", opts:["France","Spain","Italy","Greece"], a:2, ex:"The Renaissance, a major cultural movement, is widely considered to have begun in Italy."},
+{q:"Which is the official residence of the President of the United States?", opts:["Capitol Hill","White House","Pentagon","Camp David"], a:1, ex:"The White House in Washington D.C. is the official residence and workplace of the US President."},
+{q:"The 'Big Ben' clock tower is located in which city?", opts:["Edinburgh","London","Dublin","Manchester"], a:1, ex:"Big Ben, the famous bell within the Elizabeth Tower, is located at the Palace of Westminster in London."},
+{q:"Which country is home to the ancient city of Petra?", opts:["Egypt","Jordan","Syria","Lebanon"], a:1, ex:"The ancient city of Petra, carved into rose-coloured rock, is located in Jordan."},
+{q:"Which is the deepest point in the world's oceans?", opts:["Puerto Rico Trench","Java Trench","Mariana Trench","Tonga Trench"], a:2, ex:"The Mariana Trench in the Pacific Ocean contains the deepest known point on Earth, the Challenger Deep."},
+{q:"Which metal is liquid at room temperature?", opts:["Lead","Mercury","Aluminium","Tin"], a:1, ex:"Mercury is the only metal that is liquid at standard room temperature."},
+{q:"Which is the most abundant gas in the human exhaled breath, besides nitrogen?", opts:["Carbon dioxide","Oxygen","Hydrogen","Helium"], a:0, ex:"Exhaled human breath contains a higher concentration of carbon dioxide compared to inhaled air, alongside reduced oxygen."},
+{q:"Which scientist proposed the law of universal gravitation?", opts:["Galileo Galilei","Isaac Newton","Albert Einstein","Johannes Kepler"], a:1, ex:"Isaac Newton formulated the law of universal gravitation in the 17th century."},
+{q:"The human skeleton in adults typically has how many bones?", opts:["186","206","226","246"], a:1, ex:"An adult human skeleton typically has 206 bones."},
+{q:"Which organ is the largest in the human body?", opts:["Liver","Brain","Skin","Lungs"], a:2, ex:"The skin is the largest organ of the human body by surface area and weight."},
+{q:"Which is the powerhouse of the cell, responsible for energy production?", opts:["Nucleus","Mitochondria","Ribosome","Golgi body"], a:1, ex:"Mitochondria generate most of the cell's energy through a process called cellular respiration."},
+{q:"DNA stands for:", opts:["Deoxyribonucleic acid","Dinitrogen acid","Diribose nucleic acid","Deoxyribose nuclear acid"], a:0, ex:"DNA stands for deoxyribonucleic acid, the molecule carrying genetic information."},
+{q:"Which scientist is credited with discovering the structure of DNA's double helix, alongside Crick?", opts:["James Watson","Gregor Mendel","Louis Pasteur","Robert Hooke"], a:0, ex:"James Watson and Francis Crick are credited with discovering the double-helix structure of DNA in 1953."},
+{q:"Which is the chemical formula for table salt?", opts:["NaCl","KCl","CaCl2","MgCl2"], a:0, ex:"Table salt, sodium chloride, has the chemical formula NaCl."},
+{q:"What is the pH value of pure water, considered neutral?", opts:["5","6","7","8"], a:2, ex:"Pure water has a pH of 7, which is considered chemically neutral."},
+{q:"The currency of the United Kingdom is the:", opts:["Euro","Dollar","Pound Sterling","Franc"], a:2, ex:"The United Kingdom's official currency is the Pound Sterling."}
+];
+const CURRENT_AFFAIRS = [
+{q:"CPEC, a major infrastructure initiative involving Pakistan, stands for:", opts:["China-Pakistan Economic Corridor","Central Pakistan Energy Commission","China-Pakistan Education Council","Combined Pakistan Export Corridor"], a:0, ex:"CPEC (China-Pakistan Economic Corridor) is a flagship project under China's Belt and Road Initiative."},
+{q:"SAARC is a regional cooperation organisation for which part of the world?", opts:["Southeast Asia","South Asia","Central Asia","Sub-Saharan Africa"], a:1, ex:"SAARC (South Asian Association for Regional Cooperation) includes Pakistan, India, Bangladesh, and other South Asian states."},
+{q:"FATF, an organisation Pakistan has worked with on financial compliance, focuses on combating:", opts:["Climate change","Money laundering and terror financing","Cyber warfare","Trade tariffs"], a:1, ex:"The Financial Action Task Force (FATF) sets standards to combat money laundering and terrorist financing globally."},
+{q:"Which Pakistani city hosts the Pakistan Stock Exchange's main trading floor?", opts:["Lahore","Islamabad","Karachi","Faisalabad"], a:2, ex:"The Pakistan Stock Exchange (PSX) is headquartered in Karachi."},
+{q:"NADRA, an agency Pakistani citizens regularly interact with, primarily handles:", opts:["Tax collection","National identity registration","Passport printing only","Vehicle registration"], a:1, ex:"NADRA (National Database and Registration Authority) manages national identity records, including CNICs."},
+{q:"FIA stands for:", opts:["Federal Intelligence Authority","Federal Investigation Agency","Foreign Intelligence Agency","Federal Inspection Authority"], a:1, ex:"FIA stands for Federal Investigation Agency, Pakistan's premier federal law enforcement body."},
+{q:"The FIA operates under which federal ministry in Pakistan?", opts:["Ministry of Defence","Ministry of Interior","Ministry of Law and Justice","Ministry of Information"], a:1, ex:"The Federal Investigation Agency functions under Pakistan's Ministry of Interior."},
+{q:"Which law primarily governs the establishment and powers of the FIA?", opts:["FIA Act 1974","Anti-Terrorism Act 1997","Pakistan Penal Code 1860","Police Order 2002"], a:0, ex:"The Federal Investigation Agency Act, 1974, established the FIA and defines its powers and jurisdiction."},
+{q:"Which of these crimes typically falls under the FIA's investigative jurisdiction?", opts:["Local theft cases","Cybercrime and human trafficking","Municipal traffic violations","Local property disputes"], a:1, ex:"The FIA investigates federal crimes including cybercrime, human trafficking, smuggling, and immigration-related offences, distinct from local policing matters."},
+{q:"The FIA's Cyber Crime Wing primarily deals with cases under which law?", opts:["Defamation Ordinance","Prevention of Electronic Crimes Act (PECA)","Official Secrets Act","Anti-Money Laundering Act"], a:1, ex:"The FIA's Cyber Crime Wing handles cases primarily under the Prevention of Electronic Crimes Act (PECA), 2016."},
+{q:"Interpol, the international policing organisation Pakistan coordinates with via FIA, is headquartered in:", opts:["Geneva","The Hague","Lyon","Brussels"], a:2, ex:"Interpol's headquarters, the General Secretariat, is located in Lyon, France."},
+{q:"Which FIA wing primarily deals with passport and visa fraud, and human smuggling?", opts:["Anti-Corruption Wing","Immigration Wing","Economic Crime Wing","Cyber Crime Wing"], a:1, ex:"The Immigration Wing of the FIA handles cases related to human smuggling, trafficking, and passport or visa-related fraud."},
+{q:"NACTA, a Pakistani body focused on counter-terrorism coordination, stands for:", opts:["National Counter Terrorism Authority","National Crime and Terrorism Agency","National Anti-Crime Task Authority","National Civil and Tactical Authority"], a:0, ex:"NACTA (National Counter Terrorism Authority) coordinates Pakistan's counter-terrorism strategy across agencies."},
+{q:"The National Accountability Bureau (NAB) in Pakistan primarily investigates:", opts:["Cybercrime","Corruption and white-collar crime","Traffic violations","Immigration fraud"], a:1, ex:"NAB is Pakistan's premier anti-corruption body, investigating corruption and white-collar crime among public office-holders."},
+{q:"Which institution regulates Pakistan's banking sector?", opts:["Securities and Exchange Commission","State Bank of Pakistan","Federal Board of Revenue","Competition Commission"], a:1, ex:"The State Bank of Pakistan is the central regulatory authority overseeing the country's banking sector."},
+{q:"The Federal Board of Revenue (FBR) in Pakistan is primarily responsible for:", opts:["Tax collection","Immigration control","Currency printing","Police recruitment"], a:0, ex:"The FBR is Pakistan's apex tax authority, responsible for collecting federal taxes and customs duties."},
+{q:"Which Pakistani institution is responsible for election administration?", opts:["Supreme Court","Election Commission of Pakistan","National Assembly Secretariat","Ministry of Interior"], a:1, ex:"The Election Commission of Pakistan (ECP) is constitutionally mandated to organise and conduct elections."},
+{q:"The Pakistan Telecommunication Authority (PTA) primarily regulates:", opts:["Television broadcasting only","Telecommunication services","Postal services","Internet content production"], a:1, ex:"PTA regulates the telecommunication sector in Pakistan, including mobile, internet, and related services."},
+{q:"Which agency in Pakistan is primarily responsible for foreign intelligence and national security matters?", opts:["FIA","ISI","NAB","FBR"], a:1, ex:"The Inter-Services Intelligence (ISI) is Pakistan's premier intelligence agency, focused on national security and intelligence matters."},
+{q:"The Anti-Narcotics Force (ANF) in Pakistan primarily deals with:", opts:["Cybercrime","Drug trafficking and narcotics control","Tax fraud","Immigration fraud"], a:1, ex:"The Anti-Narcotics Force is Pakistan's lead agency for combating drug trafficking and narcotics-related crime."},
+{q:"Which international organisation sets global standards for civil aviation and is relevant to FIA's immigration checks at airports?", opts:["ICAO","IATA","WTO","WHO"], a:0, ex:"The International Civil Aviation Organization (ICAO) sets global standards for aviation, including passport and travel document standards relevant to immigration control."},
+{q:"The Anti-Money Laundering Act in Pakistan is primarily enforced in coordination with which agency, among others?", opts:["FIA","NADRA","PTA","PEMRA"], a:0, ex:"The FIA plays a key enforcement role in anti-money laundering cases alongside other regulatory bodies."},
+{q:"PEMRA, a Pakistani regulatory body, oversees:", opts:["Electronic media and broadcasting","Banking sector","Telecommunication infrastructure","Customs and trade"], a:0, ex:"PEMRA (Pakistan Electronic Media Regulatory Authority) regulates electronic media and broadcasting in Pakistan."},
+{q:"The Securities and Exchange Commission of Pakistan (SECP) primarily regulates:", opts:["Capital markets and corporate sector","Federal taxation","Immigration","Police recruitment"], a:0, ex:"SECP regulates Pakistan's capital markets, corporate sector, and non-banking financial institutions."},
+{q:"Human trafficking and smuggling cases in Pakistan most often fall under the jurisdiction of which wing of the FIA?", opts:["Anti-Corruption Wing","Immigration Wing","Economic Crime Wing","Special Investigation Wing"], a:1, ex:"The Immigration Wing of the FIA is the primary unit handling human trafficking and smuggling cases."},
+{q:"The 'Black Money' or money laundering offences are primarily prosecuted in Pakistan under which legislation?", opts:["Anti-Money Laundering Act, 2010","Prevention of Electronic Crimes Act","Customs Act","Income Tax Ordinance only"], a:0, ex:"The Anti-Money Laundering Act, 2010, provides the principal legal framework for prosecuting money laundering in Pakistan."},
+{q:"The term 'white-collar crime' typically refers to:", opts:["Violent street crime","Non-violent financially motivated crime","Crimes committed by minors","Crimes against the state's territory"], a:1, ex:"White-collar crime refers to non-violent offences typically committed for financial gain, such as fraud and embezzlement."},
+{q:"PECA, the law most associated with FIA's cybercrime cases, was enacted in which year?", opts:["2010","2016","2019","2021"], a:1, ex:"The Prevention of Electronic Crimes Act (PECA) was enacted in 2016."},
+{q:"Which of the following is generally classified as a cybercrime under Pakistani law?", opts:["Unauthorised access to a computer system","Jaywalking","Tax evasion","Trespassing"], a:0, ex:"Unauthorised access to computer systems or data is a core offence under cybercrime legislation such as PECA."},
+{q:"Interpol's 'Red Notice' is best described as:", opts:["A formal extradition order","An international alert to locate and provisionally arrest a person","A trade sanction","A visa restriction"], a:1, ex:"A Red Notice is an international request to law enforcement agencies to locate and provisionally arrest a person pending extradition, not an extradition order itself."},
+{q:"Money laundering generally refers to the process of:", opts:["Counterfeiting currency","Disguising the origins of illegally obtained money","Printing excess currency","Exchanging foreign currency legally"], a:1, ex:"Money laundering involves making illegally obtained funds appear legitimate by disguising their original source."},
+{q:"Human smuggling, as distinguished from human trafficking, primarily involves:", opts:["Forced exploitation of victims","Facilitating illegal border crossing for a fee, typically with consent","Domestic violence","Identity theft"], a:1, ex:"Human smuggling typically involves the consensual, illegal transport of people across borders for payment, distinct from trafficking, which involves coercion or exploitation."},
+{q:"Human trafficking, as a crime, is primarily characterised by:", opts:["Voluntary illegal migration","Exploitation through force, fraud, or coercion","Tax evasion across borders","Currency smuggling"], a:1, ex:"Human trafficking involves the exploitation of individuals through force, fraud, or coercion, often for labour or sexual exploitation."},
+{q:"The term 'cyber stalking' under Pakistani cybercrime law refers to:", opts:["Online shopping fraud","Persistent unwanted digital surveillance or contact causing distress","Hacking bank accounts","Software piracy"], a:1, ex:"Cyberstalking involves persistent, unwanted online monitoring or contact intended to harass or intimidate a victim."},
+{q:"Phishing, a common cybercrime, primarily involves:", opts:["Physical theft of devices","Deceptive attempts to obtain sensitive information by posing as a trustworthy source","Jamming wireless signals","Overloading servers with traffic"], a:1, ex:"Phishing involves tricking victims into revealing sensitive information, such as passwords, by impersonating legitimate entities."},
+{q:"A 'Denial of Service' (DoS) cyberattack primarily aims to:", opts:["Steal personal data","Make an online service unavailable by overwhelming it with traffic","Encrypt files for ransom","Clone a website for fraud"], a:1, ex:"A Denial of Service attack overwhelms a system with traffic, making it unavailable to legitimate users."},
+{q:"Ransomware is a type of malicious software that primarily:", opts:["Steals browsing history","Encrypts a victim's data and demands payment for its release","Slows down internet speed","Displays unwanted advertisements"], a:1, ex:"Ransomware encrypts a victim's files and demands payment, usually in cryptocurrency, in exchange for the decryption key."},
+{q:"The term 'extradition' refers to the process of:", opts:["Granting asylum to refugees","Surrendering a suspect from one jurisdiction to another for prosecution","Issuing a new passport","Renewing a work visa"], a:1, ex:"Extradition is the formal process of transferring a suspect or convicted person from one jurisdiction to another for legal proceedings."},
+{q:"An Exit Control List (ECL), relevant to FIA's immigration role, restricts:", opts:["Entry of foreign tourists","A person's ability to leave the country","Import of goods","Export of currency"], a:1, ex:"Placement on the Exit Control List bars a named individual from leaving Pakistan, often pending legal proceedings."},
+{q:"The Black List and ECL maintained for immigration control are enforced primarily at:", opts:["Local police stations","International airports and border points","Tax offices","Banks"], a:1, ex:"The FIA enforces these immigration control lists primarily at airports and international border crossing points."},
+{q:"A Letter of Rogatory, sometimes used in FIA's cross-border investigations, is best described as:", opts:["A request for foreign aid","A formal request for judicial assistance between countries","A diplomatic protest","A trade agreement"], a:1, ex:"A Letter of Rogatory is a formal request from a court in one country to a court in another, seeking judicial assistance such as evidence gathering."},
+{q:"Mutual Legal Assistance Treaties (MLATs) primarily facilitate:", opts:["Trade tariffs reduction","Cross-border cooperation in criminal investigations and evidence sharing","Visa-free travel","Currency exchange agreements"], a:1, ex:"MLATs are agreements between countries to formally cooperate on criminal investigations, including sharing evidence and extraditing suspects."},
+{q:"The term 'forensic audit', often used in FIA's economic crime investigations, refers to:", opts:["A routine annual tax filing","An examination of financial records to detect fraud or financial crime","A bank's internal staff training","A stock market listing requirement"], a:1, ex:"A forensic audit examines financial records specifically to uncover evidence of fraud or financial misconduct, often for use in legal proceedings."},
+{q:"Hawala, a term relevant to FIA's economic crime cases, refers to:", opts:["A type of bank loan","An informal, often unregulated system of transferring money","A government subsidy scheme","A type of insurance policy"], a:1, ex:"Hawala is an informal money transfer system operating outside formal banking channels, sometimes linked to money laundering investigations."},
+{q:"Benami transactions, a term used in financial crime investigations, refer to:", opts:["Transactions made in a fictitious or another person's name to hide true ownership","Cross-border trade deals","Cash payments above a certain threshold","Online banking transfers"], a:0, ex:"Benami transactions involve property or assets held in the name of one person while actually being owned and controlled by another, often to conceal true ownership."},
+{q:"The Anti-Terrorism Act of Pakistan was enacted in which year?", opts:["1990","1997","2001","2008"], a:1, ex:"The Anti-Terrorism Act, 1997, provides the principal legal framework for prosecuting terrorism-related offences in Pakistan."},
+{q:"Which body in Pakistan is primarily responsible for trying terrorism-related cases?", opts:["High Courts only","Anti-Terrorism Courts","Magistrate Courts","Family Courts"], a:1, ex:"Anti-Terrorism Courts (ATCs) were established specifically to try cases under the Anti-Terrorism Act."},
+{q:"The Protection of Pakistan Act, related to national security investigations, was introduced primarily to address:", opts:["Civil property disputes","Threats to internal security and terrorism","Tax disputes","Trade regulation"], a:1, ex:"The Protection of Pakistan Act was introduced to strengthen the legal framework for addressing internal security threats and terrorism."},
+{q:"The term 'chain of custody' in criminal investigation refers to:", opts:["The hierarchy of police officers","The documented, unbroken handling history of evidence","A suspect's family lineage","A court's appeal process"], a:1, ex:"Chain of custody refers to the chronological documentation of evidence handling, crucial for maintaining its integrity in court."},
+{q:"A First Information Report (FIR) in Pakistan's criminal justice system is best described as:", opts:["A final court verdict","The initial record of a complaint that sets a criminal investigation in motion","An appeal document","A bail application"], a:1, ex:"An FIR is the initial document recorded by police on receiving information about a cognisable offence, initiating the investigation process."},
+{q:"In Pakistan's legal system, the term 'cognisable offence' refers to one where:", opts:["Police can arrest without a warrant","Only civil courts have jurisdiction","No FIR can be registered","Only the victim can file a case"], a:0, ex:"A cognisable offence is one serious enough that police may arrest a suspect without first obtaining a warrant."},
+{q:"A 'non-cognisable offence', by contrast, typically requires:", opts:["Immediate arrest without a warrant","Court permission or a warrant before police can act","No investigation at all","Trial by a military court"], a:1, ex:"For non-cognisable offences, police generally need a court's permission or warrant before taking action, unlike cognisable offences."},
+{q:"The principle of 'innocent until proven guilty' is a foundational concept in:", opts:["Civil law only","Criminal justice systems generally","Administrative law only","International trade law"], a:1, ex:"The presumption of innocence is a core principle of criminal justice systems worldwide, including Pakistan's."},
+{q:"Bail, in legal terminology, refers to:", opts:["A final acquittal","Temporary release of an accused pending trial, often under conditions","A type of criminal charge","A court's written verdict"], a:1, ex:"Bail allows for the temporary release of an accused person pending trial, typically under specified conditions."},
+{q:"The term 'remand' in criminal proceedings refers to:", opts:["Final sentencing","Sending an accused back into custody, often for further investigation","Acquitting a suspect","Filing an appeal"], a:1, ex:"Remand refers to a court order keeping an accused in custody, often to allow further investigation."},
+{q:"Interpol's role is best described as:", opts:["A global police force with arrest powers","A platform facilitating international police cooperation and information-sharing","A military alliance","A trade regulatory body"], a:1, ex:"Interpol facilitates cooperation and information-sharing between national police forces; it does not itself have direct powers of arrest."},
+{q:"The 'Egmont Group', relevant to financial intelligence cooperation, is a network of:", opts:["Customs agencies","Financial Intelligence Units (FIUs)","Central banks","Stock exchanges"], a:1, ex:"The Egmont Group is an international network of Financial Intelligence Units that cooperate on combating money laundering and terror financing."},
+{q:"Pakistan's Financial Monitoring Unit (FMU) primarily functions as the country's:", opts:["Tax collection agency","Financial Intelligence Unit","Stock market regulator","Central bank"], a:1, ex:"The Financial Monitoring Unit is Pakistan's Financial Intelligence Unit, responsible for analysing suspicious financial transactions."},
+{q:"The term 'asset freezing', used in financial crime enforcement, refers to:", opts:["Permanently confiscating assets without trial","Temporarily restricting access to or use of assets pending investigation or trial","Converting assets into cash","Donating seized assets to charity"], a:1, ex:"Asset freezing temporarily restricts a person's ability to access or transfer assets, typically pending the outcome of an investigation or trial."},
+{q:"The Anti-Money Laundering and Countering Financing of Terrorism (AML/CFT) regime in Pakistan is primarily overseen by which combination of bodies?", opts:["FIA, State Bank, and FMU among others","Only the Supreme Court","Only NADRA","Only PEMRA"], a:0, ex:"Pakistan's AML/CFT regime involves coordinated oversight by multiple bodies including the FIA, State Bank of Pakistan, and Financial Monitoring Unit."},
+{q:"A Suspicious Transaction Report (STR), relevant to anti-money laundering compliance, is typically filed by:", opts:["Ordinary citizens to the police","Banks and financial institutions to the Financial Monitoring Unit","Foreign embassies to the Foreign Office","Courts to the legislature"], a:1, ex:"Banks and financial institutions are required to file STRs with the Financial Monitoring Unit when they detect potentially suspicious transactions."},
+{q:"The term 'shell company', often relevant in financial crime cases, refers to:", opts:["A legitimate manufacturing company","A company with no significant assets or operations, often used to disguise financial activity","A government-owned enterprise","A publicly listed company"], a:1, ex:"Shell companies typically have no real business operations and are sometimes used to conceal the true ownership or movement of funds."},
+{q:"Identity theft, a crime under cyber law, primarily involves:", opts:["Forging physical documents only","Unlawfully obtaining and using another person's personal information","Stealing physical property","Trespassing on private land"], a:1, ex:"Identity theft involves the unlawful acquisition and use of someone else's personal or financial information, typically for fraud."},
+{q:"Online financial fraud schemes that promise high returns with little risk are typically known as:", opts:["Ponzi or pyramid schemes","Forensic audits","Letters of rogatory","Suspicious transaction reports"], a:0, ex:"Ponzi and pyramid schemes promise unusually high returns with little risk, paying earlier investors using funds from newer investors, until the scheme collapses."},
+{q:"Counter Violent Extremism (CVE) programmes are primarily designed to:", opts:["Increase trade exports","Prevent radicalisation and recruitment into extremist groups","Improve tax collection","Regulate stock markets"], a:1, ex:"CVE programmes focus on preventing radicalisation and countering the recruitment narratives used by extremist groups."},
+{q:"The term 'jurisdiction', in a legal context, refers to:", opts:["A type of court fee","The official authority of a court or agency to hear and decide cases","A category of criminal offence","A police rank"], a:1, ex:"Jurisdiction refers to the official power or authority of a court or agency to hear and rule on certain matters."},
+{q:"The term 'modus operandi', commonly used in investigations, refers to:", opts:["A suspect's legal defence","A criminal's characteristic method or pattern of operating","A court's final ruling","A type of search warrant"], a:1, ex:"Modus operandi describes the distinctive method or pattern a person uses in committing crimes."},
+{q:"The term 'whistleblower' refers to someone who:", opts:["Commits a crime anonymously","Reports wrongdoing or illegal activity, often within an organisation","Defends an accused person in court","Investigates cybercrime professionally"], a:1, ex:"A whistleblower is a person who exposes wrongdoing or illegal activity, often from within an organisation."},
+{q:"The principle of 'due process' in law primarily ensures:", opts:["Faster trials regardless of fairness","Fair legal procedures and protections for individuals facing legal action","Mandatory conviction in serious cases","Reduced sentences for repeat offenders"], a:1, ex:"Due process ensures that legal proceedings follow fair and established procedures, protecting individual rights."},
+{q:"In policing, 'community policing' primarily emphasises:", opts:["Military-style enforcement","Collaborative problem-solving between police and the community","Strict zero-tolerance arrests only","Centralised intelligence gathering only"], a:1, ex:"Community policing emphasises building partnerships between law enforcement and the community to identify and solve local problems."},
+{q:"A 'sting operation' in law enforcement typically involves:", opts:["A public awareness campaign","An undercover operation designed to catch a suspect in the act of committing a crime","A press conference","A routine patrol"], a:1, ex:"A sting operation is a covert law enforcement technique designed to catch a person committing or attempting to commit a crime."},
+{q:"The term 'asset recovery' in anti-corruption work refers to:", opts:["Returning seized passports","Tracing, freezing, and reclaiming proceeds of crime, often across borders","Issuing new identity cards","Reducing court fees"], a:1, ex:"Asset recovery involves tracing, freezing, and ultimately reclaiming assets that represent the proceeds of crime, often across international borders."},
+{q:"The FATF 'grey list' generally refers to countries that:", opts:["Have no banking system","Have strategic deficiencies in combating money laundering and terror financing but are working with FATF to address them","Are banned from all international trade","Have no diplomatic relations with FATF members"], a:1, ex:"Countries on FATF's grey list have committed to addressing identified strategic deficiencies in their AML/CFT framework, under increased monitoring."},
+{q:"Pakistan's experience on the FATF lists in recent years primarily related to concerns about:", opts:["Currency design","Anti-money laundering and terror financing compliance","Stock market regulation","Tourism visa policy"], a:1, ex:"Pakistan's placement on FATF's monitoring lists in recent years centred on strengthening its anti-money laundering and counter-terror financing framework."},
+{q:"The term 'red flag indicator' in financial crime monitoring refers to:", opts:["A diplomatic warning between states","A pattern or signal suggesting potentially suspicious financial activity","A type of currency note security feature","A type of court summons"], a:1, ex:"Red flag indicators are patterns or signals, such as unusual transaction sizes or structures, that suggest potentially suspicious financial activity warranting further review."},
+{q:"'Trafficking in Persons' reports, published internationally and referenced in Pakistan's anti-trafficking efforts, are most associated with which type of organisation?", opts:["Sports federations","Government and international bodies monitoring human trafficking","Stock exchanges","Religious councils"], a:1, ex:"Trafficking in Persons reports are typically produced by government and international bodies to monitor and assess countries' anti-trafficking efforts."},
+{q:"The term 'cyber forensics' refers to:", opts:["Designing new software","Recovering and analysing digital evidence from electronic devices for investigations","Installing antivirus software","Building websites"], a:1, ex:"Cyber forensics involves recovering, preserving, and analysing digital evidence from computers and electronic devices to support investigations."},
+{q:"A 'data breach' refers to an incident where:", opts:["A company's stock price falls","Unauthorised parties gain access to confidential or protected data","A website's design changes","A company merges with another"], a:1, ex:"A data breach occurs when unauthorised individuals gain access to confidential, sensitive, or protected information."},
+{q:"The term 'two-factor authentication' (2FA) in cybersecurity refers to:", opts:["Using two different passwords for the same account","A security process requiring two different forms of verification to access an account","Logging in from two devices simultaneously","A type of computer virus"], a:1, ex:"Two-factor authentication adds a second verification step, such as a code sent to a phone, beyond just a password."},
+{q:"'Encryption' in digital security refers to the process of:", opts:["Deleting files permanently","Converting data into a coded form to prevent unauthorised access","Compressing files to save space","Backing up files to the cloud"], a:1, ex:"Encryption converts readable data into a coded form, which can only be accessed or understood with the correct decryption key."},
+{q:"A Virtual Private Network (VPN) is primarily used to:", opts:["Speed up a computer's processor","Create a secure, encrypted connection over a public network","Print documents remotely","Block all internet access"], a:1, ex:"A VPN creates a secure, encrypted connection over a public network, helping protect privacy and data while online."},
+{q:"'Deepfake' technology refers to:", opts:["A genuine, unedited video recording","AI-generated synthetic media that can convincingly alter or fabricate a person's likeness or voice","A type of secure messaging app","A government surveillance programme"], a:1, ex:"Deepfakes use artificial intelligence to create convincing but fabricated images, video, or audio, often raising concerns for fraud and misinformation."},
+{q:"The term 'social engineering' in cybercrime refers to:", opts:["Building social media platforms","Manipulating people into divulging confidential information or taking harmful actions","Designing public infrastructure","Conducting opinion surveys"], a:1, ex:"Social engineering exploits human psychology, rather than technical vulnerabilities, to trick people into revealing confidential information."},
+{q:"'Spear phishing' differs from regular phishing in that it:", opts:["Targets a specific individual or organisation with personalised deception","Targets random users with generic messages","Only happens via phone calls","Cannot be prevented with any security measures"], a:0, ex:"Spear phishing is a targeted form of phishing aimed at a specific individual or organisation, using personalised information to appear convincing."},
+{q:"The term 'dark web' refers to:", opts:["Websites with dark colour themes","A part of the internet not indexed by standard search engines, often requiring special software to access","Government-only internal networks","Slow-loading websites"], a:1, ex:"The dark web refers to encrypted online content not indexed by standard search engines, often accessed via specialised software, and sometimes associated with illicit activity."},
+{q:"A 'botnet', relevant to cybercrime investigations, refers to:", opts:["A network of compromised computers controlled remotely, often for malicious purposes","A legitimate customer service chatbot","A type of antivirus software","A government surveillance satellite"], a:0, ex:"A botnet is a network of infected, remotely controlled computers, frequently used to carry out coordinated cyberattacks."},
+{q:"The 'principle of double jeopardy' in criminal law generally means:", opts:["A person can be tried twice for the same offence if new evidence emerges","A person cannot generally be tried twice for the same offence after a valid acquittal or conviction","Two suspects must always be tried together","A case must be heard by two judges"], a:1, ex:"The principle of double jeopardy generally protects a person from being tried again for the same offence after a valid acquittal or conviction."},
+{q:"A 'plea bargain' in criminal proceedings refers to:", opts:["An agreement where an accused pleads guilty, often to a lesser charge, in exchange for a more lenient outcome","A request for a public trial","A type of bail bond","An appeal to a higher court"], a:0, ex:"A plea bargain involves negotiation where the accused agrees to plead guilty, often to a reduced charge, in exchange for a more lenient sentence or other concession."},
+{q:"The term 'amicus curiae' in legal proceedings refers to:", opts:["The presiding judge","A 'friend of the court' who offers information or expertise relevant to a case but is not a party to it","The defendant's lawyer","A court stenographer"], a:1, ex:"An amicus curiae, literally 'friend of the court', provides expert information or perspective relevant to a case without being a direct party to it."},
+{q:"The term 'habeas corpus', a legal safeguard, primarily protects against:", opts:["Unlawful detention","Tax fraud","Trademark infringement","Property disputes"], a:0, ex:"A writ of habeas corpus is a legal remedy against unlawful detention, requiring authorities to justify a person's imprisonment before a court."},
+{q:"The principle of 'rule of law' broadly refers to the idea that:", opts:["Rulers are above legal constraints","All individuals and institutions, including government, are accountable under publicly known laws","Only the judiciary can make laws","Laws apply only to ordinary citizens"], a:1, ex:"The rule of law holds that everyone, including those in government, is subject to and accountable under the law."},
+{q:"An 'arrest warrant' is best described as:", opts:["A court's final verdict","A legal document authorising law enforcement to detain a specific person","A type of bail application","A request for evidence disclosure"], a:1, ex:"An arrest warrant is issued by a competent authority, authorising the police to detain a named individual."},
+{q:"A 'search warrant' authorises law enforcement to:", opts:["Arrest any person in a building","Search a specified location for evidence related to a crime","Seize all property in a city block","Detain witnesses indefinitely"], a:1, ex:"A search warrant authorises law enforcement to search a specific location for evidence connected to a crime, under judicial oversight."},
+{q:"The term 'corroborating evidence' refers to evidence that:", opts:["Contradicts the main testimony","Supports or confirms other evidence already presented","Is automatically inadmissible in court","Comes only from the accused"], a:1, ex:"Corroborating evidence supports or strengthens other evidence already presented, helping establish the credibility of a claim."},
+{q:"In investigative work, 'circumstantial evidence' refers to evidence that:", opts:["Directly proves a fact without inference","Requires inference to connect it to a conclusion about a fact","Is always stronger than direct evidence","Cannot be used in any court"], a:1, ex:"Circumstantial evidence requires an inferential link to establish a fact, unlike direct evidence which proves a fact outright."},
+{q:"The term 'know your customer' (KYC), used by banks to prevent financial crime, refers to:", opts:["A marketing strategy for new clients","A due-diligence process to verify a customer's identity before establishing a financial relationship","A loyalty rewards programme","A type of customer complaint form"], a:1, ex:"KYC procedures require financial institutions to verify a customer's identity and assess risk before opening accounts, helping prevent money laundering and fraud."},
+{q:"The Interpol notice colour used to seek information on a person's identity, location, or activities, distinct from an arrest request, is the:", opts:["Red Notice","Blue Notice","Yellow Notice","Black Notice"], a:1, ex:"A Blue Notice is used to collect additional information about a person's identity, location, or activities in relation to a crime."},
+{q:"Interpol's 'Yellow Notice' is primarily issued to help:", opts:["Locate missing persons, often minors","Identify unidentified bodies","Warn about dangerous criminals","Alert about stolen property"], a:0, ex:"A Yellow Notice is used to help locate missing persons, particularly minors, or to help identify people unable to identify themselves."},
+{q:"The 'Black Notice', issued by Interpol, is used to seek information on:", opts:["Wanted fugitives","Unidentified bodies","Stolen vehicles","Counterfeit currency"], a:1, ex:"A Black Notice seeks information to help identify unidentified bodies."},
+{q:"A 'green notice' issued by Interpol provides warnings about persons who:", opts:["Have committed criminal acts and are likely to repeat them in other countries","Are victims of trafficking","Are missing minors","Hold diplomatic immunity"], a:0, ex:"A Green Notice provides warning about a person's criminal activities, where that person is considered likely to repeat the offences in other countries."}
+];
+const ENGLISH_LANGUAGE = [
+{q:"Choose the correctly spelled word:", opts:["Acommodate","Accommodate","Accomodate","Acomodate"], a:1, ex:"'Accommodate' has double 'c' and double 'm'."},
+{q:"Select the synonym of 'Vigilant':", opts:["Careless","Watchful","Lazy","Confused"], a:1, ex:"'Vigilant' means alert and watchful for possible danger or difficulty."},
+{q:"Choose the correct sentence:", opts:["He don't like tea.","He doesn't likes tea.","He doesn't like tea.","He not like tea."], a:2, ex:"Third-person singular negative present tense correctly takes 'doesn't' + base verb: 'He doesn't like tea.'"},
+{q:"Select the antonym of 'Transparent':", opts:["Clear","Obscure","Visible","Bright"], a:1, ex:"'Obscure' (unclear, hidden) is the opposite of 'transparent' (clear, easy to see through)."},
+{q:"Fill in the blank: The investigation team ___ already submitted its report.", opts:["have","has","having","had have"], a:1, ex:"'Team' is treated as a singular collective noun here, so it takes the singular auxiliary 'has'."},
+{q:"Identify the correctly punctuated sentence:", opts:["Its a difficult case.","It's a difficult case.","Its' a difficult case.","Its a difficult, case."], a:1, ex:"'It's' is the contraction for 'it is', which fits the sentence; 'its' is the possessive form."},
+{q:"Choose the correctly spelled word:", opts:["Occassion","Occasion","Ocassion","Occaision"], a:1, ex:"'Occasion' has a single 'c' and double 's'."},
+{q:"Select the synonym of 'Meticulous':", opts:["Careless","Hasty","Precise","Reckless"], a:2, ex:"'Meticulous' means showing great attention to detail; 'precise' is its closest synonym here."},
+{q:"Select the antonym of 'Benevolent':", opts:["Kind","Generous","Malevolent","Charitable"], a:2, ex:"'Malevolent' (having harmful intent) is the opposite of 'benevolent' (well-meaning, kind)."},
+{q:"Choose the correct sentence:", opts:["Neither of the suspects were present.","Neither of the suspects was present.","Neither of the suspect were present.","Neither suspects was present."], a:1, ex:"'Neither' takes a singular verb: 'Neither of the suspects was present.'"},
+{q:"Identify the correctly spelled word:", opts:["Recieve","Receive","Receeve","Receve"], a:1, ex:"The correct spelling follows 'i before e except after c': 'Receive'."},
+{q:"Select the synonym of 'Candid':", opts:["Deceptive","Frank","Secretive","Vague"], a:1, ex:"'Candid' means open and honest; 'frank' is its closest synonym."},
+{q:"Choose the correct sentence:", opts:["She is one of the officer who arrived late.","She is one of the officers who arrived late.","She is one of the officers who arrives late.","She are one of the officers who arrived late."], a:1, ex:"'One of the officers who' requires the plural noun 'officers' and the plural verb 'arrived' agreeing with 'who'."},
+{q:"Fill in the blank: By the time the police arrived, the suspect ___ already fled.", opts:["has","had","have","having"], a:1, ex:"Past perfect tense 'had fled' is used for an action completed before another past action (the police arriving)."},
+{q:"Select the antonym of 'Ambiguous':", opts:["Unclear","Vague","Clear","Confusing"], a:2, ex:"'Clear' is the opposite of 'ambiguous', which means open to more than one interpretation."},
+{q:"Choose the correctly spelled word:", opts:["Definately","Definitely","Definitley","Definitly"], a:1, ex:"The correct spelling is 'Definitely', often misspelled due to its pronunciation."},
+{q:"Identify the correct sentence:", opts:["Each of the witnesses have given a statement.","Each of the witnesses has given a statement.","Each of the witness has given a statement.","Each of the witnesses giving a statement."], a:1, ex:"'Each' is singular and takes the singular verb 'has'."},
+{q:"Select the synonym of 'Fraudulent':", opts:["Honest","Deceitful","Legitimate","Sincere"], a:1, ex:"'Fraudulent' means dishonest or deceptive; 'deceitful' is its closest synonym."},
+{q:"Choose the correct sentence:", opts:["The evidence was clear and convincing.","The evidence were clear and convincing.","The evidences was clear and convincing.","The evidence are clear and convincing."], a:0, ex:"'Evidence' is typically treated as an uncountable noun and takes a singular verb: 'was'."},
+{q:"Select the antonym of 'Reluctant':", opts:["Hesitant","Eager","Unwilling","Doubtful"], a:1, ex:"'Eager' is the opposite of 'reluctant', which means unwilling or hesitant."},
+{q:"Fill in the blank: If the suspect ___ guilty, he would have confessed earlier.", opts:["was","were","is","had been"], a:1, ex:"In this hypothetical/subjunctive conditional, 'were' is the conventionally correct form: 'If he were guilty...'"},
+{q:"Choose the correctly spelled word:", opts:["Embarass","Embarrass","Embarras","Embarrasse"], a:1, ex:"The correct spelling is 'Embarrass', with double 'r' and double 's'."},
+{q:"Select the synonym of 'Plausible':", opts:["Unlikely","Believable","Impossible","Absurd"], a:1, ex:"'Plausible' means seemingly reasonable or probable; 'believable' is its closest synonym."},
+{q:"Identify the correct sentence:", opts:["He is taller than me.","He is taller than I.","He is more taller than I.","He is tall than I."], a:1, ex:"Formally, comparative constructions take the subject pronoun: 'He is taller than I (am).' Though 'than me' is common in casual speech, 'than I' is the traditionally correct form."},
+{q:"Select the antonym of 'Concealed':", opts:["Hidden","Revealed","Disguised","Masked"], a:1, ex:"'Revealed' is the opposite of 'concealed', which means hidden from view."},
+{q:"Choose the correct sentence:", opts:["The jury has reached its verdict.","The jury have reached its verdict.","The jury has reached their verdict.","The juries has reached its verdict."], a:0, ex:"'Jury' as a collective acting as one unit takes the singular verb 'has' and singular possessive 'its'."},
+{q:"Fill in the blank: The officer insisted that the report ___ submitted by Friday.", opts:["is","be","was","will be"], a:1, ex:"After verbs like 'insist' expressing a demand, the subjunctive form 'be' is used: 'insisted that the report be submitted'."},
+{q:"Select the synonym of 'Apprehend':", opts:["Release","Arrest","Ignore","Forgive"], a:1, ex:"'Apprehend' means to arrest or seize someone, especially a suspected criminal."},
+{q:"Choose the correctly spelled word:", opts:["Maintainance","Maintenance","Maintinance","Maintanance"], a:1, ex:"The correct spelling is 'Maintenance'."},
+{q:"Select the antonym of 'Authentic':", opts:["Genuine","Counterfeit","Original","Real"], a:1, ex:"'Counterfeit' (fake, fraudulent) is the opposite of 'authentic' (genuine, real)."},
+{q:"Identify the correct sentence:", opts:["Who did you give the file to?","Whom did you give the file to?","Who you gave the file to?","Whom you gave the file?"], a:1, ex:"Since the pronoun is the object of the preposition 'to', the objective case 'whom' is grammatically correct, though 'who' is common informally."},
+{q:"Fill in the blank: Despite ___ evidence, the suspect denied involvement.", opts:["overwhelm","overwhelmed","overwhelming","overwhelms"], a:2, ex:"'Overwhelming' functions as an adjective modifying 'evidence'."},
+{q:"Select the synonym of 'Coerce':", opts:["Persuade gently","Force","Request","Suggest"], a:1, ex:"'Coerce' means to compel someone by force or threat; 'force' is its closest synonym."},
+{q:"Choose the correctly spelled word:", opts:["Privilege","Priviledge","Privilage","Privelege"], a:0, ex:"The correct spelling is 'Privilege'."},
+{q:"Select the antonym of 'Voluntary':", opts:["Willing","Compulsory","Optional","Free"], a:1, ex:"'Compulsory' (required) is the opposite of 'voluntary' (done by choice)."},
+{q:"Identify the correct sentence:", opts:["I wish I was there.","I wish I were there.","I wish I am there.","I wish I will be there."], a:1, ex:"After 'I wish', the subjunctive 'were' is the traditionally correct form, even with a singular subject: 'I wish I were there.'"},
+{q:"Fill in the blank: The lawyer ___ to the court that the evidence was insufficient.", opts:["argued","argues","arguing","argue"], a:0, ex:"Past tense 'argued' is needed to maintain consistency with a past-tense narrative."},
+{q:"Select the synonym of 'Testify':", opts:["Deny","Bear witness","Conceal","Refuse"], a:1, ex:"'Testify' means to give evidence as a witness; 'bear witness' is its closest synonym."},
+{q:"Choose the correctly spelled word:", opts:["Liaison","Liason","Liaision","Liasion"], a:0, ex:"The correct spelling is 'Liaison'."},
+{q:"Select the antonym of 'Negligent':", opts:["Careless","Diligent","Reckless","Inattentive"], a:1, ex:"'Diligent' (careful, attentive) is the opposite of 'negligent' (careless, failing in duty)."},
+{q:"Identify the correct sentence:", opts:["Between you and I, this case is weak.","Between you and me, this case is weak.","Between you and myself, this case is weak.","Between yourself and I, this case is weak."], a:1, ex:"After the preposition 'between', the objective case 'me' is correct: 'Between you and me'."},
+{q:"Fill in the blank: The suspect was found ___ of the charges.", opts:["innocent","innocence","innocently","innocents"], a:0, ex:"'Innocent' is the correct adjective form to follow 'found'."},
+{q:"Select the synonym of 'Allege':", opts:["Prove conclusively","Claim without proof","Deny completely","Confirm"], a:1, ex:"'Allege' means to claim something is true without yet providing proof; this matches 'claim without proof'."},
+{q:"Choose the correctly spelled word:", opts:["Harass","Harrass","Harras","Harasss"], a:0, ex:"The correct spelling is 'Harass', with single 'r' and double 's'."},
+{q:"Select the antonym of 'Lenient':", opts:["Strict","Mild","Tolerant","Forgiving"], a:0, ex:"'Strict' is the opposite of 'lenient', which means tolerant or merciful in judgment."},
+{q:"Identify the correct sentence:", opts:["The number of complaints are increasing.","The number of complaints is increasing.","The numbers of complaint is increasing.","The number of complaint are increasing."], a:1, ex:"'The number of' is treated as singular: 'The number of complaints is increasing.'"},
+{q:"Fill in the blank: He was charged ___ fraud.", opts:["with","of","for","at"], a:0, ex:"The standard idiomatic preposition is 'charged with' a crime: 'charged with fraud'."},
+{q:"Select the synonym of 'Culpable':", opts:["Innocent","Blameworthy","Honest","Excused"], a:1, ex:"'Culpable' means deserving blame; 'blameworthy' is its closest synonym."},
+{q:"Choose the correctly spelled word:", opts:["Surveillance","Surveilance","Survelliance","Survellance"], a:0, ex:"The correct spelling is 'Surveillance'."},
+{q:"Select the antonym of 'Verify':", opts:["Confirm","Disprove","Validate","Authenticate"], a:1, ex:"'Disprove' is the opposite of 'verify', which means to confirm the truth of something."},
+{q:"Identify the correct sentence:", opts:["Either the manager or the employees is responsible.","Either the manager or the employees are responsible.","Either the managers or employee are responsible.","Either manager or employees responsible."], a:1, ex:"With 'either...or', the verb agrees with the nearer subject; since 'employees' is plural and closer to the verb, 'are' is correct."},
+{q:"Fill in the blank: She apologised ___ being late for the hearing.", opts:["for","of","about","at"], a:0, ex:"The standard idiom is 'apologise for' something: 'apologised for being late'."},
+{q:"Select the synonym of 'Detain':", opts:["Release","Hold in custody","Free","Acquit"], a:1, ex:"'Detain' means to keep someone in official custody; 'hold in custody' is its closest synonym."},
+{q:"Choose the correctly spelled word:", opts:["Acquitted","Aquitted","Acquited","Aquited"], a:0, ex:"The correct spelling is 'Acquitted', with 'cqu' and double 't'."},
+{q:"Select the antonym of 'Guilty':", opts:["Convicted","Innocent","Culpable","Liable"], a:1, ex:"'Innocent' (not guilty) is the opposite of 'guilty'."},
+{q:"Identify the correct sentence:", opts:["I look forward to hear from you.","I look forward to hearing from you.","I look forward for hearing from you.","I look forward hear from you."], a:1, ex:"The idiom 'look forward to' is followed by a gerund: 'look forward to hearing'."},
+{q:"Fill in the blank: The committee is ___ to make a final decision tomorrow.", opts:["expect","expected","expecting","expects"], a:1, ex:"The passive form 'is expected to' correctly fits the sentence structure."},
+{q:"Select the synonym of 'Verdict':", opts:["Accusation","Judgment","Complaint","Appeal"], a:1, ex:"'Verdict' refers to a formal decision or judgment made by a court or jury."},
+{q:"Choose the correctly spelled word:", opts:["Indict","Indite","Indicte","Indyct"], a:0, ex:"The correct spelling is 'Indict', meaning to formally accuse someone of a crime."},
+{q:"Select the antonym of 'Compulsory':", opts:["Mandatory","Optional","Required","Obligatory"], a:1, ex:"'Optional' is the opposite of 'compulsory', which means required."},
+{q:"Identify the correct sentence:", opts:["This is the man whom I suspect committed the crime.","This is the man who I suspect committed the crime.","This is the man whose I suspect committed the crime.","This is the man which I suspect committed the crime."], a:1, ex:"'Who' is correct here because it is the subject of 'committed', despite following 'I suspect'."},
+{q:"Fill in the blank: The accused was released ___ bail.", opts:["on","at","in","by"], a:0, ex:"The standard idiom is 'released on bail'."},
+{q:"Select the synonym of 'Fabricate':", opts:["Disclose","Invent falsely","Confirm","Repeat"], a:1, ex:"'Fabricate' means to invent or create something false; 'invent falsely' captures this meaning."},
+{q:"Choose the correctly spelled word:", opts:["Perseverence","Perseverance","Perseverrance","Persaverance"], a:1, ex:"The correct spelling is 'Perseverance'."},
+{q:"Select the antonym of 'Credible':", opts:["Believable","Implausible","Trustworthy","Reliable"], a:1, ex:"'Implausible' is the opposite of 'credible', which means believable or trustworthy."},
+{q:"Identify the correct sentence:", opts:["Less people attended the hearing than expected.","Fewer people attended the hearing than expected.","Few people attended the hearing than expected.","Lesser people attended the hearing than expected."], a:1, ex:"'Fewer' is used with countable nouns like 'people'; 'less' is used with uncountable nouns."},
+{q:"Fill in the blank: The detective was confident ___ his analysis of the case.", opts:["in","of","about","at"], a:0, ex:"The standard idiom is 'confident in' one's analysis or ability."},
+{q:"Select the synonym of 'Perjury':", opts:["Honest testimony","Lying under oath","Silent refusal to testify","Legal appeal"], a:1, ex:"'Perjury' specifically refers to the crime of lying while under oath in a legal proceeding."},
+{q:"Choose the correctly spelled word:", opts:["Negotiate","Negociate","Negotiat","Negoiate"], a:0, ex:"The correct spelling is 'Negotiate'."},
+{q:"Select the antonym of 'Acquit':", opts:["Exonerate","Convict","Pardon","Release"], a:1, ex:"'Convict' is the opposite of 'acquit', which means to clear someone of a charge."},
+{q:"Identify the correct sentence:", opts:["The data shows a clear pattern.","The data show a clear pattern.","The datas shows a clear pattern.","The data showing a clear pattern."], a:1, ex:"In formal usage, 'data' is treated as plural, taking the verb 'show'; informally 'shows' is also widely accepted."},
+{q:"Fill in the blank: He was accused ___ tampering with evidence.", opts:["with","of","for","about"], a:1, ex:"The standard idiom is 'accused of' a wrongdoing: 'accused of tampering'."},
+{q:"Select the synonym of 'Interrogate':", opts:["Comfort","Question intensively","Ignore","Praise"], a:1, ex:"'Interrogate' means to question someone formally and thoroughly, often in an investigation."},
+{q:"Choose the correctly spelled word:", opts:["Subpoena","Subpeona","Subpoenia","Subponea"], a:0, ex:"The correct spelling is 'Subpoena', a legal order requiring someone to appear in court or produce evidence."},
+{q:"Select the antonym of 'Coerced':", opts:["Forced","Voluntary","Pressured","Compelled"], a:1, ex:"'Voluntary' is the opposite of 'coerced', which means forced or compelled."},
+{q:"Identify the correct sentence:", opts:["She did good on the exam.","She did well on the exam.","She did goodly on the exam.","She done well on the exam."], a:1, ex:"'Well' is the correct adverb to describe how the action was performed; 'good' is an adjective, not an adverb."},
+{q:"Fill in the blank: The court will rule ___ the matter next week.", opts:["on","at","in","about"], a:0, ex:"The standard idiom is 'rule on' a matter."},
+{q:"Select the synonym of 'Custody':", opts:["Freedom","Detention","Acquittal","Release"], a:1, ex:"'Custody' refers to the state of being detained, especially by police or legal authorities."},
+{q:"Choose the correctly spelled word:", opts:["Reconnaissance","Reconnaisance","Reconaissance","Recconaissance"], a:0, ex:"The correct spelling is 'Reconnaissance'."},
+{q:"Select the antonym of 'Plaintiff':", opts:["Claimant","Defendant","Litigant","Petitioner"], a:1, ex:"'Defendant' is the opposite party to the 'plaintiff' in a legal case; the plaintiff brings the case, the defendant answers it."},
+{q:"Identify the correct sentence:", opts:["He has less responsibilities than before.","He has fewer responsibilities than before.","He has less responsibility's than before.","He have fewer responsibilities than before."], a:1, ex:"'Fewer' is correct with the countable noun 'responsibilities'."},
+{q:"Fill in the blank: The witness was reluctant ___ speak in court.", opts:["to","of","for","at"], a:0, ex:"The standard infinitive construction is 'reluctant to speak'."},
+{q:"Select the synonym of 'Embezzle':", opts:["Donate openly","Misappropriate funds","Invest wisely","Repay fully"], a:1, ex:"'Embezzle' means to steal or misappropriate funds placed in one's trust, typically in a workplace setting."},
+{q:"Choose the correctly spelled word:", opts:["Conscientious","Concientious","Consciencious","Conscientous"], a:0, ex:"The correct spelling is 'Conscientious'."},
+{q:"Select the antonym of 'Litigant':", opts:["Party to a lawsuit","Bystander","Plaintiff","Defendant"], a:1, ex:"A 'bystander' has no direct involvement in a case, unlike a litigant who is a party to a lawsuit."},
+{q:"Identify the correct sentence:", opts:["Neither the witness nor the suspect were cooperative.","Neither the witness nor the suspect was cooperative.","Neither the witness or the suspect was cooperative.","Neither witness nor suspect cooperative."], a:1, ex:"With 'neither...nor' joining two singular subjects, the verb 'was' (singular) agrees correctly."},
+{q:"Fill in the blank: The prosecutor presented evidence ___ support her argument.", opts:["to","for","at","of"], a:0, ex:"The infinitive 'to support' correctly expresses purpose here."},
+{q:"Select the synonym of 'Exonerate':", opts:["Convict","Clear of blame","Imprison","Accuse"], a:1, ex:"'Exonerate' means to officially clear someone of blame or wrongdoing."},
+{q:"Choose the correctly spelled word:", opts:["Jeopardy","Jepoardy","Jeoporady","Jeopardey"], a:0, ex:"The correct spelling is 'Jeopardy'."},
+{q:"Select the antonym of 'Forfeit':", opts:["Lose","Retain","Surrender","Relinquish"], a:1, ex:"'Retain' is the opposite of 'forfeit', which means to lose or be forced to give up something."},
+{q:"Identify the correct sentence:", opts:["Each officer must submit their report by 5 PM.","Each officer must submit his or her report by 5 PM.","Each officers must submit their reports by 5 PM.","Each officer must submit theirs report by 5 PM."], a:1, ex:"Formally, 'each officer' (singular) pairs with the singular 'his or her', though 'their' is common in everyday usage."},
+{q:"Fill in the blank: The agency is responsible ___ enforcing federal law.", opts:["for","of","to","at"], a:0, ex:"The standard idiom is 'responsible for' a duty or task."},
+{q:"Select the synonym of 'Substantiate':", opts:["Disprove","Support with evidence","Ignore","Withdraw"], a:1, ex:"'Substantiate' means to provide evidence to support or prove a claim."},
+{q:"Choose the correctly spelled word:", opts:["Inadmissable","Inadmissible","Inadmisible","Inadmissibel"], a:1, ex:"The correct spelling is 'Inadmissible', referring to evidence that cannot be accepted in court."},
+{q:"Select the antonym of 'Vindicate':", opts:["Justify","Condemn","Clear","Defend"], a:1, ex:"'Condemn' is the opposite of 'vindicate', which means to clear someone of blame or justify their actions."},
+{q:"Identify the correct sentence:", opts:["The report, along with the evidence, were submitted.","The report, along with the evidence, was submitted.","The reports, along with the evidence, was submitted.","The report along the evidence were submitted."], a:1, ex:"The subject 'report' is singular; 'along with the evidence' is a parenthetical phrase that doesn't change subject-verb agreement, so 'was' is correct."},
+{q:"Fill in the blank: He was found guilty ___ embezzlement.", opts:["of","with","for","about"], a:0, ex:"The standard idiom is 'found guilty of' a crime."},
+{q:"Fill in the blank: The case was dismissed ___ lack of evidence.", opts:["for","due to","with","at"], a:1, ex:"'Due to' correctly introduces the cause: 'dismissed due to lack of evidence'."},
+{q:"Select the synonym of 'Defraud':", opts:["Compensate","Swindle","Reward","Assist"], a:1, ex:"'Defraud' means to deceive someone in order to illegally gain something, typically money; 'swindle' is a close synonym."},
+{q:"Identify the correct sentence:", opts:["Statistics show that crime rates is falling.","Statistics shows that crime rates are falling.","Statistics show that crime rates are falling.","Statistic shows that crime rate is falling."], a:2, ex:"'Statistics' as a field of data takes the plural verb 'show', and 'crime rates' (plural) takes 'are falling'."}
+];
+const ISLAMIAT = [
+{q:"How many chapters (Surahs) are there in the Holy Quran?", opts:["100","104","114","120"], a:2, ex:"The Holy Quran contains 114 Surahs."},
+{q:"Which is the first Surah of the Holy Quran?", opts:["Al-Baqarah","Al-Fatiha","Al-Ikhlas","An-Nas"], a:1, ex:"Surah Al-Fatiha is the opening chapter of the Holy Quran."},
+{q:"The Hijri calendar begins from the migration of the Prophet (PBUH) from Makkah to:", opts:["Taif","Madinah","Jerusalem","Damascus"], a:1, ex:"The Islamic (Hijri) calendar begins from the Prophet's migration (Hijrah) from Makkah to Madinah in 622 CE."},
+{q:"Which is the longest Surah in the Holy Quran?", opts:["Al-Imran","An-Nisa","Al-Baqarah","Al-Maidah"], a:2, ex:"Surah Al-Baqarah is the longest chapter in the Holy Quran."},
+{q:"Which is the shortest Surah in the Holy Quran?", opts:["Al-Kausar","Al-Asr","Al-Ikhlas","Al-Nasr"], a:0, ex:"Surah Al-Kausar, with just three verses, is the shortest Surah in the Holy Quran."},
+{q:"How many times daily are Muslims obligated to perform the prescribed prayer (Salah)?", opts:["Three","Four","Five","Six"], a:2, ex:"Muslims are obligated to perform five daily prayers: Fajr, Zuhr, Asr, Maghrib, and Isha."},
+{q:"What is the term for the Islamic profession of faith?", opts:["Salah","Zakat","Shahadah","Sawm"], a:2, ex:"Shahadah is the declaration of faith, one of the Five Pillars of Islam."},
+{q:"How many pillars of Islam are there?", opts:["Three","Four","Five","Six"], a:2, ex:"Islam has Five Pillars: Shahadah, Salah, Zakat, Sawm, and Hajj."},
+{q:"What is the term for the obligatory annual charity in Islam?", opts:["Sadaqah","Zakat","Khairat","Fitrana"], a:1, ex:"Zakat is the obligatory almsgiving, one of the Five Pillars of Islam, typically calculated as a portion of one's wealth."},
+{q:"What is the term for fasting during the month of Ramadan?", opts:["Sawm","Hajj","Itikaf","Tarawih"], a:0, ex:"Sawm refers to fasting, particularly the obligatory fasting observed during the month of Ramadan."},
+{q:"The pilgrimage to Makkah, one of the Five Pillars of Islam, is called:", opts:["Umrah","Hajj","Ziyarat","Tawaf"], a:1, ex:"Hajj is the annual pilgrimage to Makkah, obligatory once in a lifetime for Muslims who are able."},
+{q:"In which month of the Islamic calendar is Hajj performed?", opts:["Ramadan","Shawwal","Dhul Hijjah","Muharram"], a:2, ex:"Hajj is performed during the Islamic month of Dhul Hijjah."},
+{q:"In which month of the Islamic calendar do Muslims observe fasting?", opts:["Muharram","Ramadan","Rajab","Shaban"], a:1, ex:"Ramadan is the month of obligatory fasting for Muslims."},
+{q:"Which night during Ramadan is considered the most blessed, associated with the revelation of the Quran?", opts:["Shab-e-Barat","Lailat-ul-Qadr","Shab-e-Meraj","Lailat-ul-Isra"], a:1, ex:"Lailat-ul-Qadr (the Night of Power/Decree) is considered the most blessed night, associated with the first revelation of the Quran."},
+{q:"What is the name of the holy book revealed to Prophet Muhammad (PBUH)?", opts:["Torah","Bible","Quran","Psalms"], a:2, ex:"The Quran is the holy book revealed to Prophet Muhammad (PBUH)."},
+{q:"In which city was Prophet Muhammad (PBUH) born?", opts:["Madinah","Makkah","Taif","Jeddah"], a:1, ex:"Prophet Muhammad (PBUH) was born in Makkah."},
+{q:"What is the name of the migration of Prophet Muhammad (PBUH) from Makkah to Madinah?", opts:["Hijrah","Isra","Meraj","Ghazwa"], a:0, ex:"Hijrah refers to the migration of the Prophet (PBUH) and his followers from Makkah to Madinah in 622 CE."},
+{q:"What is the term for the night journey of Prophet Muhammad (PBUH) from Makkah to Jerusalem?", opts:["Hijrah","Isra","Ghazwa","Sulh"], a:1, ex:"Isra refers to the night journey of the Prophet (PBUH) from Makkah to Jerusalem."},
+{q:"What is the term for the ascension of Prophet Muhammad (PBUH) to the heavens?", opts:["Meraj","Hijrah","Isra","Fath"], a:0, ex:"Meraj refers to the Prophet's (PBUH) ascension to the heavens, traditionally linked with the Isra journey."},
+{q:"Which cave is associated with the first revelation received by Prophet Muhammad (PBUH)?", opts:["Cave of Thawr","Cave of Hira","Cave of Yarmouk","Cave of Uhud"], a:1, ex:"The Cave of Hira, on Mount Jabal al-Nour near Makkah, is where the Prophet (PBUH) received the first revelation."},
+{q:"The Kaaba, the most sacred site in Islam, is located in:", opts:["Madinah","Jerusalem","Makkah","Taif"], a:2, ex:"The Kaaba, towards which Muslims direct their prayers, is located in Makkah."},
+{q:"What is the direction Muslims face during prayer called?", opts:["Mihrab","Qibla","Minbar","Adhan"], a:1, ex:"Qibla refers to the direction of the Kaaba in Makkah, which Muslims face during prayer."},
+{q:"The call to prayer in Islam is known as:", opts:["Khutbah","Adhan","Iqamah","Tilawat"], a:1, ex:"Adhan is the call to prayer announced before each of the five daily prayers."},
+{q:"The sermon delivered during Friday congregational prayer is called:", opts:["Adhan","Khutbah","Iqamah","Tarawih"], a:1, ex:"Khutbah refers to the sermon delivered, particularly during the Friday (Jumu'ah) congregational prayer."},
+{q:"What is the Friday congregational prayer called in Islam?", opts:["Tarawih","Jumu'ah","Tahajjud","Ishraq"], a:1, ex:"Jumu'ah is the obligatory Friday congregational prayer for Muslim men."},
+{q:"Who was the first Caliph of Islam after the death of Prophet Muhammad (PBUH)?", opts:["Hazrat Umar (RA)","Hazrat Abu Bakr (RA)","Hazrat Ali (RA)","Hazrat Usman (RA)"], a:1, ex:"Hazrat Abu Bakr (RA) was chosen as the first Caliph following the Prophet's (PBUH) death."},
+{q:"Who was the second Caliph of Islam?", opts:["Hazrat Abu Bakr (RA)","Hazrat Umar (RA)","Hazrat Usman (RA)","Hazrat Ali (RA)"], a:1, ex:"Hazrat Umar (RA) served as the second Caliph after Hazrat Abu Bakr (RA)."},
+{q:"Who was the third Caliph of Islam?", opts:["Hazrat Ali (RA)","Hazrat Umar (RA)","Hazrat Usman (RA)","Hazrat Abu Bakr (RA)"], a:2, ex:"Hazrat Usman (RA) served as the third Caliph of Islam."},
+{q:"Who was the fourth Caliph of Islam?", opts:["Hazrat Usman (RA)","Hazrat Ali (RA)","Hazrat Umar (RA)","Hazrat Abu Bakr (RA)"], a:1, ex:"Hazrat Ali (RA) served as the fourth Caliph of Islam."},
+{q:"The collective term for the first four Caliphs is:", opts:["Khulafa-e-Rashideen","Sahaba-e-Kiram","Ahl-e-Bait","Tabieen"], a:0, ex:"Khulafa-e-Rashideen, meaning the 'Rightly Guided Caliphs', refers to the first four Caliphs of Islam."},
+{q:"Which battle is regarded as the first major battle fought by Muslims in Islamic history?", opts:["Battle of Badr","Battle of Uhud","Battle of Khandaq","Battle of Hunain"], a:0, ex:"The Battle of Badr, fought in 624 CE, is regarded as the first major battle in Islamic history."},
+{q:"The peace treaty signed between the Muslims of Madinah and the Quraish of Makkah is known as:", opts:["Treaty of Hudaybiyyah","Treaty of Madinah","Charter of Madinah","Treaty of Taif"], a:0, ex:"The Treaty of Hudaybiyyah was a peace agreement between the Muslims and the Quraish, signed around 628 CE."},
+{q:"The document establishing the rights and responsibilities of various communities in early Madinah is known as:", opts:["Treaty of Hudaybiyyah","Charter of Madinah","Farewell Sermon","Treaty of Taif"], a:1, ex:"The Charter of Madinah (Mithaq-e-Madinah) established a framework for relations among the diverse communities of early Madinah."},
+{q:"The Farewell Sermon (Khutbah-tul-Wida) was delivered by Prophet Muhammad (PBUH) during which occasion?", opts:["His final Hajj","The conquest of Makkah","The Battle of Badr","The migration to Madinah"], a:0, ex:"The Farewell Sermon was delivered during the Prophet's (PBUH) final Hajj, shortly before his death."},
+{q:"Who was the wife of Prophet Muhammad (PBUH) known for being the first to embrace Islam?", opts:["Hazrat Aisha (RA)","Hazrat Khadija (RA)","Hazrat Hafsa (RA)","Hazrat Zainab (RA)"], a:1, ex:"Hazrat Khadija (RA) was the Prophet's (PBUH) first wife and the first person to embrace Islam."},
+{q:"Who was the daughter of Prophet Muhammad (PBUH) married to Hazrat Ali (RA)?", opts:["Hazrat Fatima (RA)","Hazrat Zainab (RA)","Hazrat Ruqayyah (RA)","Hazrat Umm Kulthum (RA)"], a:0, ex:"Hazrat Fatima (RA), the Prophet's (PBUH) daughter, was married to Hazrat Ali (RA)."},
+{q:"What is the term for the close companions of Prophet Muhammad (PBUH)?", opts:["Tabieen","Sahaba","Muhajireen","Ansar"], a:1, ex:"Sahaba refers to the companions who were direct followers and contemporaries of the Prophet (PBUH)."},
+{q:"The Muslims who migrated from Makkah to Madinah are known as:", opts:["Ansar","Muhajireen","Tabieen","Khawarij"], a:1, ex:"Muhajireen refers to the early Muslims who migrated from Makkah to Madinah."},
+{q:"The residents of Madinah who supported and helped the migrating Muslims are known as:", opts:["Muhajireen","Ansar","Tabieen","Sahaba only"], a:1, ex:"Ansar refers to the residents of Madinah who welcomed and supported the Muhajireen."},
+{q:"What is the term for the generation that followed the companions of the Prophet (PBUH)?", opts:["Sahaba","Tabieen","Muhajireen","Ansar"], a:1, ex:"Tabieen refers to the generation of Muslims who followed and learned from the Sahaba but did not meet the Prophet (PBUH) directly."},
+{q:"Which Surah is recited at the beginning of every unit of prayer (Rakat), aside from a few exceptions?", opts:["Al-Ikhlas","Al-Fatiha","Al-Kausar","An-Nas"], a:1, ex:"Surah Al-Fatiha is recited in every unit (Rakat) of the obligatory prayers."},
+{q:"What is the term for the ritual washing performed before prayer?", opts:["Ghusl","Wudu","Tayammum","Istinja"], a:1, ex:"Wudu is the ritual ablution performed before prayer, involving washing specific parts of the body."},
+{q:"What is the term for the full ritual bath required in certain circumstances?", opts:["Wudu","Ghusl","Tayammum","Sajdah"], a:1, ex:"Ghusl refers to the complete ritual bath required after certain conditions, such as before Eid prayers or after specific occurrences."},
+{q:"What is the term for performing ablution using clean sand or earth when water is unavailable?", opts:["Wudu","Ghusl","Tayammum","Istinja"], a:2, ex:"Tayammum is a dry ablution method using clean sand or earth, permitted when water is unavailable or inaccessible."},
+{q:"What is the act of prostration during prayer called?", opts:["Qiyam","Rakoo","Sajdah","Qaida"], a:2, ex:"Sajdah refers to the act of prostration, touching the forehead to the ground, during prayer."},
+{q:"What is the standing position during prayer called?", opts:["Qiyam","Rakoo","Sajdah","Qaida"], a:0, ex:"Qiyam refers to the standing position at the start of each unit of prayer."},
+{q:"What is the bowing position during prayer called?", opts:["Qiyam","Rakoo","Sajdah","Tashahhud"], a:1, ex:"Rakoo refers to the bowing position performed during prayer."},
+{q:"What is Zakat typically calculated as a percentage of eligible wealth held for a full lunar year?", opts:["1%","2.5%","5%","10%"], a:1, ex:"Zakat is generally calculated as 2.5% of a Muslim's qualifying wealth held for a full lunar year, above a minimum threshold (Nisab)."},
+{q:"What is the minimum threshold of wealth above which Zakat becomes obligatory called?", opts:["Sadaqah","Nisab","Fitrana","Khairat"], a:1, ex:"Nisab refers to the minimum amount of wealth a Muslim must possess before Zakat becomes obligatory."},
+{q:"What is the charity given specifically at the end of Ramadan, before Eid prayers, called?", opts:["Zakat-ul-Maal","Sadaqah-e-Jariyah","Fitrana (Zakat-ul-Fitr)","Khairat"], a:2, ex:"Fitrana, also called Zakat-ul-Fitr, is a charity given before Eid-ul-Fitr prayers, separate from the annual Zakat."},
+{q:"Eid-ul-Fitr is celebrated after the completion of which Islamic month?", opts:["Shawwal","Ramadan","Dhul Hijjah","Muharram"], a:1, ex:"Eid-ul-Fitr is celebrated at the end of Ramadan, marking the conclusion of the month of fasting."},
+{q:"Eid-ul-Adha commemorates the willingness of which Prophet to sacrifice his son?", opts:["Prophet Musa (AS)","Prophet Ibrahim (AS)","Prophet Yusuf (AS)","Prophet Nuh (AS)"], a:1, ex:"Eid-ul-Adha commemorates Prophet Ibrahim's (AS) willingness to sacrifice his son in obedience to Allah's command."},
+{q:"Which son of Prophet Ibrahim (AS) is associated with the event commemorated during Eid-ul-Adha?", opts:["Prophet Ishaq (AS)","Prophet Ismail (AS)","Prophet Yusuf (AS)","Prophet Yaqub (AS)"], a:1, ex:"Prophet Ismail (AS) is associated with the sacrifice event commemorated during Eid-ul-Adha."},
+{q:"The ritual of walking seven times between the hills of Safa and Marwa during Hajj and Umrah is called:", opts:["Tawaf","Sai","Ramy","Wuquf"], a:1, ex:"Sai refers to the ritual of walking between Safa and Marwa, commemorating Hazrat Hajra's (AS) search for water."},
+{q:"The ritual of circling the Kaaba seven times is called:", opts:["Sai","Tawaf","Ramy","Wuquf"], a:1, ex:"Tawaf refers to the ritual of circumambulating the Kaaba seven times during Hajj and Umrah."},
+{q:"The standing at the plain of Arafat, a key ritual of Hajj, is called:", opts:["Tawaf","Sai","Wuquf-e-Arafat","Ramy"], a:2, ex:"Wuquf-e-Arafat refers to standing at the plain of Arafat, considered one of the most essential rituals of Hajj."},
+{q:"The ritual of stoning specific pillars during Hajj, symbolising rejection of evil, is called:", opts:["Tawaf","Ramy (Stoning of the Jamarat)","Sai","Wuquf"], a:1, ex:"Ramy, the stoning of the Jamarat, symbolises the rejection of Satan's temptations during Hajj."},
+{q:"The shorter pilgrimage to Makkah, which can be performed at any time of the year, is called:", opts:["Hajj","Umrah","Ziyarat","Itikaf"], a:1, ex:"Umrah is a shorter, non-obligatory pilgrimage to Makkah that can be performed at any time of the year."},
+{q:"What is the term for spiritual retreat and seclusion, often observed in the last ten days of Ramadan?", opts:["Tarawih","Itikaf","Tahajjud","Ishraq"], a:1, ex:"Itikaf refers to spiritual seclusion in a mosque, commonly practised during the last ten days of Ramadan."},
+{q:"What is the term for the additional voluntary night prayers offered during Ramadan?", opts:["Tahajjud","Tarawih","Ishraq","Witr"], a:1, ex:"Tarawih refers to the special voluntary night prayers performed during the month of Ramadan."},
+{q:"What is the term for the voluntary late-night prayer offered outside of Ramadan as well?", opts:["Tarawih","Tahajjud","Ishraq","Chasht"], a:1, ex:"Tahajjud is a voluntary prayer performed late at night, regarded as highly meritorious."},
+{q:"Which Prophet is associated with building the Kaaba, according to Islamic tradition, with his son?", opts:["Prophet Nuh (AS)","Prophet Ibrahim (AS)","Prophet Musa (AS)","Prophet Adam (AS)"], a:1, ex:"According to Islamic tradition, Prophet Ibrahim (AS), along with his son Prophet Ismail (AS), rebuilt the Kaaba."},
+{q:"Which Prophet is regarded in Islamic tradition as the first human and first Prophet?", opts:["Prophet Nuh (AS)","Prophet Adam (AS)","Prophet Ibrahim (AS)","Prophet Idris (AS)"], a:1, ex:"Prophet Adam (AS) is regarded in Islamic tradition as the first human being and the first Prophet."},
+{q:"Which Prophet is associated with the Great Flood in Islamic tradition?", opts:["Prophet Nuh (AS)","Prophet Lut (AS)","Prophet Hud (AS)","Prophet Salih (AS)"], a:0, ex:"Prophet Nuh (AS), known as Noah in other traditions, is associated with the Great Flood narrative."},
+{q:"Which Prophet is known in Islamic tradition for being thrown into a well by his brothers and later rising to a position of authority in Egypt?", opts:["Prophet Musa (AS)","Prophet Yusuf (AS)","Prophet Yaqub (AS)","Prophet Ishaq (AS)"], a:1, ex:"Prophet Yusuf (AS) is known for being thrown into a well by his brothers, later rising to a position of authority in Egypt."},
+{q:"Which Prophet is associated with parting the sea while fleeing the Pharaoh of Egypt, according to Islamic tradition?", opts:["Prophet Yusuf (AS)","Prophet Musa (AS)","Prophet Harun (AS)","Prophet Sulaiman (AS)"], a:1, ex:"Prophet Musa (AS), known as Moses in other traditions, is associated with parting the sea while leading the Israelites away from the Pharaoh."},
+{q:"Which Prophet is associated with the ability to understand the speech of animals and command jinn, according to Islamic tradition?", opts:["Prophet Dawud (AS)","Prophet Sulaiman (AS)","Prophet Idris (AS)","Prophet Yunus (AS)"], a:1, ex:"Prophet Sulaiman (AS), known as Solomon in other traditions, is described as having the ability to understand animals and command jinn."},
+{q:"Which Prophet is associated with being swallowed by a large fish/whale, according to Islamic tradition?", opts:["Prophet Yunus (AS)","Prophet Yusuf (AS)","Prophet Nuh (AS)","Prophet Lut (AS)"], a:0, ex:"Prophet Yunus (AS), known as Jonah in other traditions, is associated with the narrative of being swallowed by a large fish."},
+{q:"Which Prophet is referred to as 'Kalimullah' (one who spoke directly with Allah)?", opts:["Prophet Ibrahim (AS)","Prophet Musa (AS)","Prophet Isa (AS)","Prophet Muhammad (PBUH)"], a:1, ex:"Prophet Musa (AS) is referred to in Islamic tradition as Kalimullah, meaning 'one who spoke with Allah'."},
+{q:"Which Prophet is referred to as 'Khalilullah' (the friend of Allah)?", opts:["Prophet Adam (AS)","Prophet Ibrahim (AS)","Prophet Nuh (AS)","Prophet Musa (AS)"], a:1, ex:"Prophet Ibrahim (AS) is referred to as Khalilullah, meaning 'the friend of Allah'."},
+{q:"Prophet Muhammad (PBUH) is referred to by which title meaning 'the last Prophet'?", opts:["Khatam-un-Nabiyyeen","Rasul-Allah","Habib-Allah","Kalim-Allah"], a:0, ex:"Khatam-un-Nabiyyeen, meaning 'the Seal of the Prophets', refers to Prophet Muhammad (PBUH) as the final Prophet in Islam."},
+{q:"What is the term for the collected sayings and actions of Prophet Muhammad (PBUH)?", opts:["Quran","Hadith","Tafsir","Fiqh"], a:1, ex:"Hadith refers to the recorded sayings, actions, and approvals attributed to Prophet Muhammad (PBUH)."},
+{q:"What is the term for Quranic exegesis or interpretation?", opts:["Hadith","Tafsir","Fiqh","Sunnah"], a:1, ex:"Tafsir refers to the scholarly interpretation and explanation of the Quran."},
+{q:"What is the term for the practices and traditions of Prophet Muhammad (PBUH), distinct from obligatory acts?", opts:["Sunnah","Fardh","Wajib","Haram"], a:0, ex:"Sunnah refers to the practices, sayings, and traditions of the Prophet (PBUH), generally recommended but not strictly obligatory."},
+{q:"What is the term for an obligatory act in Islam, the omission of which is considered sinful?", opts:["Sunnah","Mustahab","Fardh","Mubah"], a:2, ex:"Fardh refers to an act that is religiously obligatory in Islam."},
+{q:"What is the term for acts that are explicitly forbidden in Islam?", opts:["Halal","Haram","Mubah","Mustahab"], a:1, ex:"Haram refers to acts or things explicitly forbidden in Islamic law."},
+{q:"What is the term for acts or things permissible in Islam?", opts:["Haram","Halal","Makruh","Fardh"], a:1, ex:"Halal refers to acts or things that are permissible according to Islamic law."},
+{q:"What is the term for acts that are discouraged but not strictly forbidden in Islam?", opts:["Haram","Makruh","Wajib","Fardh"], a:1, ex:"Makruh refers to acts that are discouraged, though not as strictly prohibited as Haram acts."},
+{q:"How many Articles of Faith are there in Islam?", opts:["Four","Five","Six","Seven"], a:2, ex:"Islam has six Articles of Faith: belief in Allah, His angels, His books, His messengers, the Day of Judgment, and divine decree."},
+{q:"What is the term for the Day of Judgment in Islamic belief?", opts:["Qadr","Yaum-ul-Akhirah / Qiyamah","Barzakh","Mizan"], a:1, ex:"Yaum-ul-Akhirah, or Qiyamah, refers to the Day of Judgment in Islamic eschatology."},
+{q:"What is the term for the intermediate state between death and resurrection in Islamic belief?", opts:["Barzakh","Jannah","Jahannam","Sirat"], a:0, ex:"Barzakh refers to the intermediate state or barrier between death and the Day of Resurrection."},
+{q:"What is the name of the bridge that souls must cross according to Islamic eschatology?", opts:["Mizan","Sirat","Barzakh","Lauh"], a:1, ex:"Sirat refers to the bridge that souls are believed to cross on the Day of Judgment, according to Islamic tradition."},
+{q:"What is the term for the scale used to weigh deeds on the Day of Judgment, according to Islamic belief?", opts:["Sirat","Mizan","Barzakh","Lauh"], a:1, ex:"Mizan refers to the scale that will weigh a person's good and bad deeds on the Day of Judgment."},
+{q:"Which angel is regarded as responsible for delivering revelation to the Prophets, including Prophet Muhammad (PBUH)?", opts:["Mikael (AS)","Jibreel (AS)","Israfeel (AS)","Izraeel (AS)"], a:1, ex:"Jibreel (AS), known as Gabriel in other traditions, is the angel regarded as responsible for delivering divine revelation."},
+{q:"Which angel is associated with taking the souls of the deceased, according to Islamic belief?", opts:["Jibreel (AS)","Mikael (AS)","Izraeel (AS)","Israfeel (AS)"], a:2, ex:"Izraeel (AS) is the angel traditionally associated with taking the souls of the deceased."},
+{q:"Which angel is associated with blowing the trumpet to signal the Day of Judgment, according to Islamic belief?", opts:["Jibreel (AS)","Israfeel (AS)","Mikael (AS)","Izraeel (AS)"], a:1, ex:"Israfeel (AS) is traditionally associated with blowing the trumpet to herald the Day of Judgment."},
+{q:"What is the term for the divine decree or predestination in Islamic belief?", opts:["Qadr","Qiyamah","Barzakh","Mizan"], a:0, ex:"Qadr refers to Allah's divine decree or predestination, one of the six Articles of Faith."},
+{q:"What is the name of the original well in Makkah, associated with Hazrat Hajra (AS) and her son?", opts:["Zamzam","Kausar","Salsabil","Tasneem"], a:0, ex:"The well of Zamzam in Makkah is traditionally associated with Hazrat Hajra (AS) and her son Prophet Ismail (AS)."},
+{q:"What is the term for the recitation of the Quran with proper pronunciation rules?", opts:["Tafsir","Tilawat / Tajweed","Fiqh","Hadith"], a:1, ex:"Tilawat refers to the recitation of the Quran, and Tajweed refers to the rules governing its correct pronunciation."},
+{q:"Which Surah is often recited for protection and is known as the 'Chapter of Sincerity'?", opts:["Al-Falaq","Al-Ikhlas","An-Nas","Al-Kausar"], a:1, ex:"Surah Al-Ikhlas, meaning 'Sincerity' or 'Purity', emphasises the oneness of Allah."},
+{q:"Which two Surahs at the end of the Quran are known as 'Al-Mu'awwizatain' (the two protective chapters)?", opts:["Al-Ikhlas and Al-Kausar","Al-Falaq and An-Nas","Al-Asr and Al-Humazah","An-Nasr and Al-Maun"], a:1, ex:"Al-Falaq and An-Nas, the final two Surahs of the Quran, are together known as Al-Mu'awwizatain, often recited for protection."},
+{q:"The Islamic calendar is based on which astronomical cycle?", opts:["Solar cycle","Lunar cycle","Stellar cycle","Tidal cycle"], a:1, ex:"The Hijri (Islamic) calendar is a lunar calendar, based on the cycles of the moon."},
+{q:"How many months are there in the Islamic (Hijri) calendar?", opts:["Ten","Eleven","Twelve","Thirteen"], a:2, ex:"The Hijri calendar consists of twelve lunar months, similar in number to the Gregorian calendar."},
+{q:"Which month is considered the first month of the Islamic calendar?", opts:["Ramadan","Muharram","Shawwal","Rajab"], a:1, ex:"Muharram is the first month of the Islamic (Hijri) calendar."},
+{q:"Which Islamic month is regarded as especially significant, containing the Day of Ashura?", opts:["Ramadan","Muharram","Rajab","Shaban"], a:1, ex:"Muharram, the first month of the Islamic calendar, contains the Day of Ashura, regarded as significant in Islamic history."},
+{q:"What is the term used for the global community of Muslims?", opts:["Ummah","Jamaat","Qaum","Millat"], a:0, ex:"Ummah refers to the global community of Muslims, transcending national and ethnic boundaries."},
+{q:"What is the term for independent reasoning used by Islamic scholars to derive legal rulings?", opts:["Tafsir","Ijtihad","Qiyas","Ijma"], a:1, ex:"Ijtihad refers to independent juristic reasoning used by qualified scholars to derive rulings on matters not explicitly addressed in primary sources."},
+{q:"What is the term for the consensus of Islamic scholars on a particular matter?", opts:["Ijtihad","Qiyas","Ijma","Istihsan"], a:2, ex:"Ijma refers to the consensus of qualified Islamic scholars on a particular legal or religious matter."},
+{q:"What is the term for an Islamic scholar qualified to issue legal rulings?", opts:["Imam","Mufti","Hafiz","Qari"], a:1, ex:"A Mufti is a scholar qualified to issue Islamic legal rulings, known as fatwas."},
+{q:"What is the term for a person skilled in the proper recitation of the Quran?", opts:["Hafiz","Qari","Mufti","Imam"], a:1, ex:"Qari refers to a person skilled in reciting the Quran according to proper pronunciation rules."}
+];
+const ANALYTICAL_REASONING = [
+{q:"If 'BOOK' is coded as 'CPPL', how is 'PAGE' coded using the same pattern?", opts:["QBHF","QBHE","PBHF","QAGF"], a:0, ex:"Each letter shifts forward by one: P→Q, A→B, G→H, E→F, giving 'QBHF'."},
+{q:"Find the next number in the series: 2, 6, 12, 20, 30, ?", opts:["40","42","36","44"], a:1, ex:"Differences increase by 2 each time (4,6,8,10,12), so 30+12 = 42."},
+{q:"A train travels 180 km in 3 hours. What is its average speed?", opts:["50 km/h","60 km/h","45 km/h","70 km/h"], a:1, ex:"Speed = Distance ÷ Time = 180 ÷ 3 = 60 km/h."},
+{q:"Pointing to a photograph, a man says, 'She is the daughter of my grandfather's only son.' How is the woman related to the man?", opts:["Sister","Mother","Cousin","Aunt"], a:0, ex:"The man's grandfather's only son is the man's own father, so his father's daughter is the man's sister."},
+{q:"Find the next number in the series: 3, 9, 27, 81, ?", opts:["162","243","324","729"], a:1, ex:"Each term is multiplied by 3, so 81 × 3 = 243."},
+{q:"Find the missing number: 5, 10, 17, 26, 37, ?", opts:["48","49","50","52"], a:1, ex:"Differences are 5,7,9,11,13 (odd numbers increasing by 2), so 37+12=49."},
+{q:"If a car covers 240 km using 20 litres of fuel, what is its fuel efficiency in km per litre?", opts:["10","12","14","16"], a:1, ex:"Efficiency = Distance ÷ Fuel = 240 ÷ 20 = 12 km/litre."},
+{q:"A sum of money doubles itself in 8 years at simple interest. What is the rate of interest per annum?", opts:["10%","12.5%","15%","20%"], a:1, ex:"If principal doubles, simple interest earned equals the principal over 8 years. Rate = (100×Principal)/(Principal×8) = 12.5%."},
+{q:"Using the code A=1, B=2, C=3...Z=26, if 'DOG' is coded as '4-15-7', what number represents the letter 'G'?", opts:["5","6","7","8"], a:2, ex:"Using A=1, B=2, C=3...: D=4, O=15, G=7, matching the given code where G corresponds to 7."},
+{q:"Find the odd one out: Apple, Banana, Carrot, Mango", opts:["Apple","Banana","Carrot","Mango"], a:2, ex:"Carrot is a vegetable (root), while the others are fruits."},
+{q:"Find the odd one out: Triangle, Square, Circle, Cube", opts:["Triangle","Square","Circle","Cube"], a:3, ex:"A cube is a three-dimensional shape, while the others are two-dimensional shapes."},
+{q:"Complete the analogy: Doctor is to Hospital as Teacher is to:", opts:["Student","School","Book","Classroom"], a:1, ex:"A doctor works in a hospital; similarly, a teacher works in a school."},
+{q:"Complete the analogy: Pen is to Write as Knife is to:", opts:["Sharp","Cut","Kitchen","Blade"], a:1, ex:"A pen is used to write; similarly, a knife is used to cut."},
+{q:"If all Roses are Flowers, and some Flowers fade quickly, which conclusion is logically valid?", opts:["All Roses fade quickly","Some Roses may fade quickly","No Roses fade quickly","All Flowers are Roses"], a:1, ex:"Since Roses are a subset of Flowers, and only 'some' Flowers fade quickly, we can only conclude that some Roses may fade quickly, not that all do."},
+{q:"If today is Wednesday, what day will it be after 17 days?", opts:["Friday","Saturday","Sunday","Monday"], a:1, ex:"17 ÷ 7 = 2 weeks with remainder 3; Wednesday + 3 days = Saturday."},
+{q:"A clock shows 3:15. What is the angle between the hour and minute hands?", opts:["0 degrees","7.5 degrees","37.5 degrees","45 degrees"], a:1, ex:"At 3:15, the minute hand is at 90°, and the hour hand has moved 0.5° per minute past 3:00, i.e., 7.5°, giving an angle of 7.5 degrees between them."},
+{q:"If 5 workers can complete a task in 12 days, how many days will it take 10 workers to complete the same task, assuming equal work rate?", opts:["4 days","6 days","8 days","10 days"], a:1, ex:"Work is inversely proportional to the number of workers: 5×12 = 10×x, so x = 6 days."},
+{q:"A is twice as old as B. Five years ago, A was three times as old as B. What is B's current age?", opts:["5 years","10 years","15 years","20 years"], a:1, ex:"Let B = x, A = 2x. Five years ago: 2x-5 = 3(x-5) → 2x-5 = 3x-15 → x = 10."},
+{q:"Find the next letter in the series: A, C, F, J, O, ?", opts:["S","T","U","V"], a:2, ex:"Gaps increase by 1 each time (2,3,4,5,6): A(+2)C(+3)F(+4)J(+5)O(+6)U."},
+{q:"If 'FRIEND' is coded as 'GSJFOE', what is the coding pattern?", opts:["Each letter shifted back by one","Each letter shifted forward by one","Letters reversed","Each letter shifted forward by two"], a:1, ex:"Each letter in 'FRIEND' is shifted forward by one position in the alphabet to get 'GSJFOE'."},
+{q:"A man walks 4 km north, then 3 km east. How far is he from his starting point?", opts:["5 km","6 km","7 km","8 km"], a:0, ex:"Using the Pythagorean theorem: distance = √(4² + 3²) = √25 = 5 km."},
+{q:"In a certain code, 'GO' is written as '715' and 'SO' is written as '1915'. How is 'SOFT' written in this code?", opts:["19156120","19152012","19151220","19156210"], a:1, ex:"Using A=1...Z=26: S=19, O=15, F=6, T=20, giving '19152012'."},
+{q:"Find the missing term: 7, 14, 28, 56, ?", opts:["84","100","112","120"], a:2, ex:"Each term doubles the previous one, so 56 × 2 = 112."},
+{q:"If the day before yesterday was Thursday, what day is tomorrow?", opts:["Saturday","Sunday","Monday","Friday"], a:1, ex:"If the day before yesterday was Thursday, today is Saturday, so tomorrow is Sunday."},
+{q:"A is the brother of B. C is the sister of A. What is the relationship between B and C?", opts:["B is C's brother or sister","C is definitely B's sister","B is definitely C's brother","No relation can be determined"], a:0, ex:"Since A, B, and C share at least one sibling relationship through A, B and C are also siblings; without knowing B's gender, we say B is C's brother or sister."},
+{q:"Find the odd one out: 8, 27, 64, 100", opts:["8","27","64","100"], a:3, ex:"8, 27, and 64 are perfect cubes (2³,3³,4³); 100 is not a perfect cube."},
+{q:"Find the odd one out: 121, 144, 169, 200", opts:["121","144","169","200"], a:3, ex:"121, 144, and 169 are perfect squares (11²,12²,13²); 200 is not a perfect square."},
+{q:"A is taller than B but shorter than C. D is taller than C. Who is the tallest?", opts:["A","B","C","D"], a:3, ex:"From the order B < A < C < D, D is the tallest."},
+{q:"If the cost price of an item is Rs. 800 and it is sold for Rs. 960, what is the profit percentage?", opts:["15%","18%","20%","25%"], a:2, ex:"Profit = 960-800 = 160. Profit % = (160/800)×100 = 20%."},
+{q:"A shopkeeper sells an item at a loss of 10%. If the cost price was Rs. 500, what was the selling price?", opts:["Rs. 440","Rs. 450","Rs. 460","Rs. 480"], a:1, ex:"Loss = 10% of 500 = 50. Selling price = 500 - 50 = Rs. 450."},
+{q:"If 20% of a number is 50, what is the number?", opts:["200","250","300","350"], a:1, ex:"If 20% of x = 50, then x = 50 ÷ 0.20 = 250."},
+{q:"What is 15% of 400?", opts:["50","55","60","65"], a:2, ex:"15% of 400 = 0.15 × 400 = 60."},
+{q:"A bag contains 4 red, 5 blue, and 3 green balls. What is the probability of randomly picking a blue ball?", opts:["1/4","5/12","1/3","1/2"], a:1, ex:"Total balls = 12. Probability of blue = 5/12."},
+{q:"If two dice are rolled, what is the probability of getting a sum of 7?", opts:["1/6","1/8","1/9","1/12"], a:0, ex:"There are 6 combinations that sum to 7 out of 36 total outcomes, giving a probability of 6/36 = 1/6."},
+{q:"A is the father of B. B is the sister of C. How is A related to C?", opts:["Father","Uncle","Brother","Grandfather"], a:0, ex:"Since A is B's father and B and C are siblings, A is also C's father."},
+{q:"If P is the mother of Q, and Q is the brother of R, how is P related to R?", opts:["Sister","Mother","Aunt","Grandmother"], a:1, ex:"Since P is Q's mother and Q and R are siblings, P is also R's mother."},
+{q:"Find the next number: 1, 4, 9, 16, 25, ?", opts:["30","36","32","34"], a:1, ex:"This is a series of perfect squares (1²,2²,3²,4²,5²), so the next term is 6² = 36."},
+{q:"Find the next number: 2, 5, 10, 17, 26, ?", opts:["35","36","37","38"], a:2, ex:"The pattern is n²+1: 1²+1=2, 2²+1=5, 3²+1=10, 4²+1=17, 5²+1=26, 6²+1=37."},
+{q:"If you rearrange the letters 'LISTEN', which of the following words can be formed?", opts:["SILENT","LASTING","TINSEL","Both SILENT and TINSEL"], a:3, ex:"'LISTEN' is an anagram of both 'SILENT' and 'TINSEL', as they share exactly the same letters."},
+{q:"A man's monthly salary is Rs. 60,000. If he saves 25% of it, how much does he spend?", opts:["Rs. 40,000","Rs. 42,000","Rs. 45,000","Rs. 48,000"], a:2, ex:"If he saves 25%, he spends 75% of 60,000 = Rs. 45,000."},
+{q:"If 6 men can build a wall in 10 days, how many men are needed to build it in 5 days, assuming equal work rate?", opts:["10","12","15","20"], a:1, ex:"Using inverse proportion: 6×10 = x×5, so x = 12 men."},
+{q:"A train 100 metres long passes a pole in 10 seconds. What is its speed in metres per second?", opts:["8 m/s","10 m/s","12 m/s","15 m/s"], a:1, ex:"Speed = Distance ÷ Time = 100 ÷ 10 = 10 m/s."},
+{q:"Two numbers are in the ratio 3:5. If their sum is 64, what are the two numbers?", opts:["24 and 40","20 and 44","28 and 36","30 and 34"], a:0, ex:"Let the numbers be 3x and 5x. Then 3x+5x=64, so 8x=64, x=8. Numbers are 24 and 40."},
+{q:"If the perimeter of a square is 48 cm, what is its area?", opts:["100 sq cm","121 sq cm","144 sq cm","169 sq cm"], a:2, ex:"Side = Perimeter ÷ 4 = 48 ÷ 4 = 12 cm. Area = 12² = 144 sq cm."},
+{q:"The average of five numbers is 20. If one number is removed, the average of the remaining four becomes 18. What was the removed number?", opts:["24","26","28","30"], a:2, ex:"Sum of 5 numbers = 100. Sum of remaining 4 = 72. Removed number = 100 - 72 = 28."},
+{q:"A is twice as efficient as B and can complete a task in 10 days alone. How many days will B alone take?", opts:["15 days","18 days","20 days","25 days"], a:2, ex:"If A is twice as efficient, B takes twice as long: 10 × 2 = 20 days."},
+{q:"If 'x' alone can complete a job in 6 days and 'y' alone in 12 days, how many days will they take together?", opts:["3 days","4 days","5 days","6 days"], a:1, ex:"Combined rate = 1/6 + 1/12 = 2/12 + 1/12 = 3/12 = 1/4, so together they take 4 days."},
+{q:"Find the missing number in the series: 4, 9, 16, 25, ?, 49", opts:["30","32","36","40"], a:2, ex:"This is the series of squares from 2² to 7²: 4,9,16,25,36,49 — the missing term is 36 (6²)."},
+{q:"In a class, the ratio of boys to girls is 5:4. If there are 45 students in total, how many girls are there?", opts:["18","20","22","25"], a:1, ex:"Total parts = 5+4 = 9. Girls = (4/9)×45 = 20."},
+{q:"If a person walks at 5 km/h, how long will it take to cover 20 km?", opts:["2 hours","3 hours","4 hours","5 hours"], a:2, ex:"Time = Distance ÷ Speed = 20 ÷ 5 = 4 hours."},
+{q:"A is the son of B. C is the father of B. What is the relationship between A and C?", opts:["Father and son","Grandfather and grandson","Brothers","Uncle and nephew"], a:1, ex:"Since C is B's father, and A is B's son, C is A's grandfather, making them grandfather and grandson."},
+{q:"If today is Monday, what day was it 100 days ago?", opts:["Friday","Saturday","Sunday","Thursday"], a:1, ex:"100 ÷ 7 = 14 weeks with remainder 2, so 100 days ago is 2 days before Monday, which is Saturday."},
+{q:"Find the odd one out: Lion, Tiger, Wolf, Elephant", opts:["Lion","Tiger","Wolf","Elephant"], a:3, ex:"Lion, Tiger, and Wolf are carnivorous predators, while the Elephant is a herbivore."},
+{q:"Find the odd one out: Violin, Guitar, Flute, Sitar", opts:["Violin","Guitar","Flute","Sitar"], a:2, ex:"Violin, Guitar, and Sitar are string instruments, while the Flute is a wind instrument."},
+{q:"Complete the series: Z, X, V, T, ?", opts:["S","R","Q","P"], a:1, ex:"The pattern skips one letter backward each time (Z,X,V,T,R), so the next letter is R."},
+{q:"If 'TABLE' is coded as 'UBCMF', what is the coding rule?", opts:["Each letter shifted forward by one","Each letter shifted backward by one","Letters reversed","Each letter shifted forward by two"], a:0, ex:"Each letter in 'TABLE' is shifted forward by one position in the alphabet to produce 'UBCMF'."},
+{q:"A father's age is three times his son's age. After 12 years, the father's age will be twice the son's age. What is the son's current age?", opts:["10 years","12 years","14 years","16 years"], a:1, ex:"Let son = x, father = 3x. After 12 years: 3x+12 = 2(x+12) → 3x+12=2x+24 → x=12."},
+{q:"If the area of a rectangle is 96 sq cm and its length is 12 cm, what is its width?", opts:["6 cm","7 cm","8 cm","9 cm"], a:2, ex:"Width = Area ÷ Length = 96 ÷ 12 = 8 cm."},
+{q:"A car travels 60 km at 30 km/h and the next 60 km at 60 km/h. What is the average speed for the entire journey?", opts:["40 km/h","42 km/h","45 km/h","48 km/h"], a:0, ex:"Total distance = 120 km. Time taken = 60/30 + 60/60 = 2+1 = 3 hours. Average speed = 120/3 = 40 km/h."},
+{q:"If a number is increased by 25% and then decreased by 20%, what is the net percentage change?", opts:["No change","5% increase","5% decrease","10% increase"], a:0, ex:"Increase by 25% then decrease by 20%: 1 × 1.25 × 0.80 = 1.00, meaning no net change overall."},
+{q:"Find the next term: 1, 1, 2, 3, 5, 8, 13, ?", opts:["18","20","21","24"], a:2, ex:"This is the Fibonacci sequence, where each term is the sum of the two preceding terms: 8+13=21."},
+{q:"In a row of 30 students, A is 12th from the left. What is A's position from the right?", opts:["18th","19th","20th","21st"], a:1, ex:"Position from right = Total - Position from left + 1 = 30 - 12 + 1 = 19th."},
+{q:"If a clock loses 5 minutes every hour, how much time will it lose in 24 hours?", opts:["100 minutes","110 minutes","120 minutes","130 minutes"], a:2, ex:"5 minutes per hour × 24 hours = 120 minutes."},
+{q:"A and B together can complete a task in 8 days. A alone can complete it in 20 days. How many days will B alone take?", opts:["10.5 days","11.5 days","12 days","13.3 days"], a:3, ex:"B's rate = 1/8 - 1/20 = 5/40 - 2/40 = 3/40, so B alone takes 40/3 ≈ 13.3 days."},
+{q:"What comes next in the pattern: 2, 4, 8, 16, 32, ?", opts:["48","56","64","72"], a:2, ex:"Each term doubles the previous one, so 32 × 2 = 64."},
+{q:"A man buys an item for Rs. 1,200 and sells it for Rs. 1,500. What is his profit percentage?", opts:["20%","22%","25%","30%"], a:2, ex:"Profit = 1500-1200 = 300. Profit % = (300/1200)×100 = 25%."},
+{q:"If the sum of two consecutive even numbers is 38, what are the numbers?", opts:["16 and 20","18 and 20","20 and 22","14 and 24"], a:1, ex:"Let the numbers be x and x+2. Then x+(x+2)=38, so 2x=36, x=18. Numbers are 18 and 20."},
+{q:"Find the odd one out: Square, Rectangle, Trapezium, Cylinder", opts:["Square","Rectangle","Trapezium","Cylinder"], a:3, ex:"Square, Rectangle, and Trapezium are two-dimensional shapes; a Cylinder is three-dimensional."},
+{q:"If A is north of B, and C is east of B, what is the direction of A with respect to C?", opts:["North-west","North-east","South-west","South-east"], a:0, ex:"If A is north of B and C is east of B, then relative to C, A lies to the north-west."},
+{q:"A is the wife of B. C is the son of B. How is A related to C?", opts:["Mother","Sister","Aunt","Grandmother"], a:0, ex:"Since A is B's wife and C is B's son, A is C's mother."},
+{q:"Find the next number: 100, 90, 81, 73, ?", opts:["64","65","66","68"], a:2, ex:"Differences decrease by 1 each time (10,9,8,7), so 73-7=66."},
+{q:"If a is 5 more than b, and b is 3 more than c, and c = 10, what is a?", opts:["15","16","17","18"], a:3, ex:"c=10, so b=c+3=13, and a=b+5=18."},
+{q:"A rectangular garden has a length of 20 m and a width of 15 m. What is its perimeter?", opts:["60 m","65 m","70 m","75 m"], a:2, ex:"Perimeter = 2(Length+Width) = 2(20+15) = 70 m."},
+{q:"If the price of an item increases from Rs. 200 to Rs. 250, what is the percentage increase?", opts:["20%","25%","30%","35%"], a:1, ex:"Percentage increase = (50/200)×100 = 25%."},
+{q:"Find the missing number: 81, 64, 49, 36, ?", opts:["25","27","30","32"], a:0, ex:"These are squares of decreasing numbers (9²,8²,7²,6²), so the next term is 5² = 25."},
+{q:"If a man's speed in still water is 8 km/h and the speed of the current is 2 km/h, what is his downstream speed?", opts:["6 km/h","8 km/h","10 km/h","12 km/h"], a:2, ex:"Downstream speed = speed in still water + current speed = 8+2 = 10 km/h."},
+{q:"Using the same data, what is his upstream speed?", opts:["4 km/h","5 km/h","6 km/h","7 km/h"], a:2, ex:"Upstream speed = speed in still water - current speed = 8-2 = 6 km/h."},
+{q:"If 3 pens cost Rs. 45, how much would 7 pens cost at the same rate?", opts:["Rs. 95","Rs. 100","Rs. 105","Rs. 110"], a:2, ex:"Cost per pen = 45/3 = 15. Cost of 7 pens = 15×7 = Rs. 105."},
+{q:"A is older than B. C is older than A. D is younger than B. Who is the oldest?", opts:["A","B","C","D"], a:2, ex:"From the order D < B < A < C, C is the oldest."},
+{q:"Find the next number in the series: 11, 13, 17, 19, 23, ?", opts:["27","29","31","33"], a:1, ex:"This is a series of prime numbers; the next prime after 23 is 29."},
+{q:"If a is to the left of b, and c is to the right of b, what is the order from left to right?", opts:["a, b, c","b, a, c","c, b, a","a, c, b"], a:0, ex:"Since a is left of b, and c is right of b, the order from left to right is a, b, c."},
+{q:"Find the odd one out: 12, 18, 24, 35", opts:["12","18","24","35"], a:3, ex:"12, 18, and 24 are multiples of 6; 35 is not."},
+{q:"A is the brother-in-law of B's husband. How might A be related to B?", opts:["A could be B's brother","A could be B's father","A could be B's son","A could be B's grandfather"], a:0, ex:"If A is the brother-in-law of B's husband, A is likely B's own brother (making him the husband's brother-in-law through marriage to B)."},
+{q:"If the average of 4 numbers is 25, and three of them are 20, 22, and 28, what is the fourth number?", opts:["28","30","32","34"], a:1, ex:"Sum of 4 numbers = 100. Sum of known three = 70. Fourth number = 100-70 = 30."},
+{q:"A bus covers a certain distance at 40 km/h and returns at 60 km/h. What is the average speed for the whole journey?", opts:["46 km/h","48 km/h","50 km/h","52 km/h"], a:1, ex:"Using the formula for average speed with equal distances: (2×40×60)/(40+60) = 4800/100 = 48 km/h."},
+{q:"Find the next term: 5, 11, 23, 47, ?", opts:["92","94","95","96"], a:2, ex:"Each term is double the previous term plus 1: 5×2+1=11, 11×2+1=23, 23×2+1=47, 47×2+1=95."},
+{q:"If a square's diagonal is 10√2 cm, what is the length of its side?", opts:["8 cm","9 cm","10 cm","12 cm"], a:2, ex:"Diagonal = side × √2, so side = diagonal/√2 = 10√2/√2 = 10 cm."},
+{q:"A is twice as old as B was 10 years ago. If B is currently 30, how old is A now?", opts:["35","38","40","42"], a:2, ex:"B was 30-10=20 ten years ago. A is twice that, so A = 40."},
+{q:"If 8 men can complete a task in 15 days working 6 hours a day, how many days will 10 men take working 8 hours a day, assuming equal efficiency?", opts:["8 days","9 days","10 days","12 days"], a:1, ex:"Using men×days×hours constant: 8×15×6 = 10×x×8 → 720 = 80x → x = 9 days."},
+{q:"Find the missing number: 6, 11, 21, 36, 56, ?", opts:["76","81","86","91"], a:1, ex:"Differences are 5,10,15,20,25 (increasing by 5), so 56+25=81."},
+{q:"If P:Q = 2:3 and Q:R = 4:5, what is P:R?", opts:["8:15","6:10","8:20","4:5"], a:0, ex:"P:Q=2:3 and Q:R=4:5. To combine, scale Q to match: P:Q=8:12, Q:R=12:15, so P:R=8:15."},
+{q:"A man invests Rs. 10,000 at 10% simple interest per annum. What will be the total amount after 3 years?", opts:["Rs. 12,000","Rs. 12,500","Rs. 13,000","Rs. 13,500"], a:2, ex:"Simple Interest = (10000×10×3)/100 = 3000. Total amount = 10000+3000 = Rs. 13,000."},
+{q:"If the length of a rectangle is increased by 20% and width is decreased by 20%, what happens to the area?", opts:["No change","4% decrease","4% increase","10% decrease"], a:1, ex:"New area factor = 1.20 × 0.80 = 0.96, representing a 4% decrease in area."},
+{q:"Find the odd one out: 3, 5, 7, 9", opts:["3","5","7","9"], a:3, ex:"3, 5, and 7 are prime numbers; 9 is not, since 9 = 3×3."},
+{q:"A is the sister of B. B is the brother of C. C is the son of D. How is A related to D?", opts:["Daughter","Niece","Granddaughter","Sister"], a:0, ex:"Since C is D's son and A, B, and C are siblings, A is also D's daughter."},
+{q:"If 5 machines produce 100 units in 4 hours, how many units will 8 machines produce in 4 hours, assuming the same rate per machine?", opts:["140","150","160","180"], a:2, ex:"Rate per machine = 100/(5×4) = 5 units/hour. For 8 machines in 4 hours: 8×4×5 = 160 units."},
+{q:"Find the next number: 1000, 500, 250, 125, ?", opts:["50","62.5","75","100"], a:1, ex:"Each term is half the previous term, so 125 ÷ 2 = 62.5."},
+{q:"A is older than B, but younger than C. B is older than D. Which of these is definitely true?", opts:["A is older than D","C is older than A","D is older than C","B is older than C"], a:1, ex:"From A < C, we know directly that C is older than A; the relation between B and D, or A and D, is not fully determined here."},
+{q:"If the total cost of 12 chairs is Rs. 18,000, what is the cost of 20 chairs at the same rate?", opts:["Rs. 28,000","Rs. 30,000","Rs. 32,000","Rs. 34,000"], a:1, ex:"Cost per chair = 18000/12 = 1500. Cost of 20 chairs = 1500×20 = Rs. 30,000."},
+{q:"Find the missing number: 2, 6, 18, 54, ?", opts:["108","144","162","216"], a:2, ex:"Each term is multiplied by 3, so 54×3=162."}
+];
+
+(function(){
+
+const SUBJECTS = [
+  {key:'pakistan', label:'Pakistan Studies', data:PAKISTAN_STUDIES, tag:'PS'},
+  {key:'general', label:'General Knowledge', data:GENERAL_KNOWLEDGE, tag:'GK'},
+  {key:'current', label:'Current Affairs', data:CURRENT_AFFAIRS, tag:'CA'},
+  {key:'english', label:'English Language', data:ENGLISH_LANGUAGE, tag:'EN'},
+  {key:'islamiat', label:'Islamiat', data:ISLAMIAT, tag:'IS'},
+  {key:'analytical', label:'Analytical Reasoning', data:ANALYTICAL_REASONING, tag:'AR'}
+];
+
+let selectedSubjectKey = null; // null means "mixed"
+let selectedCount = 20;
+let QUESTIONS = [];
+let current = 0;
+let answers = [];
+let answered = [];
+let startTime = null;
+let timerInterval = null;
+
+const selectorWrap = document.getElementById('selectorWrap');
+const quizWrap = document.getElementById('quizWrap');
+const resultsWrap = document.getElementById('resultsWrap');
+const reviewWrap = document.getElementById('reviewWrap');
+const brief = document.getElementById('brief');
+const masthead = document.getElementById('masthead');
+
+function shuffle(arr){
+  const a = arr.slice();
+  for(let i = a.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function buildSubjectGrid(){
+  const grid = document.getElementById('subjectGrid');
+  grid.innerHTML = '';
+
+  const mixedCard = document.createElement('div');
+  mixedCard.className = 'subject-card';
+  mixedCard.dataset.key = 'mixed';
+  mixedCard.innerHTML =
+    '<div class="icon">MIX</div>' +
+    '<div class="name">Mixed Practice</div>' +
+    '<div class="count">All 600 questions, shuffled</div>';
+  mixedCard.addEventListener('click', () => selectSubject('mixed'));
+  grid.appendChild(mixedCard);
+
+  SUBJECTS.forEach(s => {
+    const card = document.createElement('div');
+    card.className = 'subject-card';
+    card.dataset.key = s.key;
+    card.innerHTML =
+      '<div class="icon">' + s.tag + '</div>' +
+      '<div class="name">' + s.label + '</div>' +
+      '<div class="count">' + s.data.length + ' questions available</div>';
+    card.addEventListener('click', () => selectSubject(s.key));
+    grid.appendChild(card);
+  });
+}
+
+function selectSubject(key){
+  selectedSubjectKey = key;
+  document.querySelectorAll('.subject-card').forEach(card => {
+    card.classList.toggle('selected', card.dataset.key === key);
+  });
+  const label = key === 'mixed' ? 'Mixed Practice (all subjects)' : SUBJECTS.find(s => s.key === key).label;
+  document.getElementById('selectorHint').textContent = 'Ready: ' + label + ' — ' + selectedCount + ' questions.';
+  document.getElementById('startBtn').disabled = false;
+}
+
+function buildCountPills(){
+  document.querySelectorAll('.count-pill').forEach(pill => {
+    pill.addEventListener('click', () => {
+      document.querySelectorAll('.count-pill').forEach(p => p.classList.remove('selected'));
+      pill.classList.add('selected');
+      selectedCount = parseInt(pill.dataset.count, 10);
+      if(selectedSubjectKey){
+        const label = selectedSubjectKey === 'mixed' ? 'Mixed Practice (all subjects)' : SUBJECTS.find(s => s.key === selectedSubjectKey).label;
+        document.getElementById('selectorHint').textContent = 'Ready: ' + label + ' — ' + selectedCount + ' questions.';
+      }
+    });
+  });
+}
+
+function prepareQuestions(){
+  let pool = [];
+  if(selectedSubjectKey === 'mixed'){
+    SUBJECTS.forEach(s => {
+      s.data.forEach(q => pool.push(Object.assign({}, q, {cat: s.label})));
+    });
+  } else {
+    const subject = SUBJECTS.find(s => s.key === selectedSubjectKey);
+    subject.data.forEach(q => pool.push(Object.assign({}, q, {cat: subject.label})));
+  }
+  pool = shuffle(pool);
+  QUESTIONS = pool.slice(0, Math.min(selectedCount, pool.length));
+}
+
+document.getElementById('startBtn').addEventListener('click', startQuiz);
+document.getElementById('nextBtn').addEventListener('click', nextQuestion);
+document.getElementById('retakeBtn').addEventListener('click', retake);
+document.getElementById('reviewBtn').addEventListener('click', showReview);
+
+buildSubjectGrid();
+buildCountPills();
+
+function startQuiz(){
+  prepareQuestions();
+  answers = new Array(QUESTIONS.length).fill(null);
+  answered = new Array(QUESTIONS.length).fill(false);
+  current = 0;
+
+  selectorWrap.classList.add('hidden');
+  brief.classList.add('hidden');
+  masthead.classList.add('hidden');
+  document.querySelector('.rule').classList.add('hidden');
+
+  quizWrap.classList.add('active');
+  document.getElementById('qTotal').textContent = QUESTIONS.length;
+  startTime = Date.now();
+  timerInterval = setInterval(updateTimer, 1000);
+  renderQuestion();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function updateTimer(){
+  const elapsed = Math.floor((Date.now() - startTime)/1000);
+  const m = String(Math.floor(elapsed/60)).padStart(2,'0');
+  const s = String(elapsed%60).padStart(2,'0');
+  document.getElementById('timer').textContent = m + ':' + s + ' elapsed';
+}
+
+function renderQuestion(){
+  const q = QUESTIONS[current];
+  document.getElementById('qCurrent').textContent = current + 1;
+  document.getElementById('qCategory').textContent = q.cat;
+  document.getElementById('qText').textContent = q.q;
+  document.getElementById('progressFill').style.width = ((current)/QUESTIONS.length*100) + '%';
+
+  const optsWrap = document.getElementById('qOptions');
+  optsWrap.innerHTML = '';
+  const letters = ['A','B','C','D'];
+
+  q.opts.forEach((opt, idx) => {
+    const btn = document.createElement('button');
+    btn.className = 'option';
+    btn.type = 'button';
+    btn.innerHTML = '<span class="letter">' + letters[idx] + '</span><span>' + opt + '</span>';
+    btn.addEventListener('click', () => selectOption(idx));
+    optsWrap.appendChild(btn);
+  });
+
+  document.getElementById('qExplain').classList.remove('show');
+  document.getElementById('qExplain').innerHTML = '';
+  document.getElementById('nextBtn').disabled = true;
+  document.getElementById('nextBtn').textContent = (current === QUESTIONS.length - 1) ? 'Finish Test →' : 'Next Question →';
+  document.getElementById('flagCounter').textContent = '';
+
+  if(answered[current]){
+    lockOptions(answers[current]);
+  }
+}
+
+function selectOption(idx){
+  if(answered[current]) return;
+  answers[current] = idx;
+  answered[current] = true;
+  lockOptions(idx);
+}
+
+function lockOptions(selectedIdx){
+  const q = QUESTIONS[current];
+  const optsWrap = document.getElementById('qOptions');
+  const buttons = optsWrap.querySelectorAll('.option');
+  buttons.forEach((btn, idx) => {
+    btn.disabled = true;
+    if(idx === q.a){
+      btn.classList.add('correct');
+    }
+    if(idx === selectedIdx && idx !== q.a){
+      btn.classList.add('incorrect');
+    }
+    if(idx === selectedIdx){
+      btn.classList.add('selected');
+    }
+  });
+
+  const explainEl = document.getElementById('qExplain');
+  const verdictWord = (selectedIdx === q.a) ? 'Correct.' : 'Not quite.';
+  explainEl.innerHTML = '<b>' + verdictWord + '</b> ' + q.ex;
+  explainEl.classList.add('show');
+
+  document.getElementById('nextBtn').disabled = false;
+}
+
+function nextQuestion(){
+  if(current === QUESTIONS.length - 1){
+    finishQuiz();
+    return;
+  }
+  current++;
+  renderQuestion();
+}
+
+function finishQuiz(){
+  clearInterval(timerInterval);
+  quizWrap.classList.remove('active');
+  resultsWrap.classList.add('active');
+  computeResults();
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+function computeResults(){
+  let correct = 0, wrong = 0, skip = 0;
+  const catStats = {};
+
+  QUESTIONS.forEach((q, idx) => {
+    if(!catStats[q.cat]) catStats[q.cat] = {correct:0, total:0};
+    catStats[q.cat].total++;
+
+    if(answers[idx] === null || !answered[idx]){
+      skip++;
+    } else if(answers[idx] === q.a){
+      correct++;
+      catStats[q.cat].correct++;
+    } else {
+      wrong++;
+    }
+  });
+
+  const pct = Math.round((correct/QUESTIONS.length)*100);
+
+  document.getElementById('cntCorrect').textContent = correct;
+  document.getElementById('cntWrong').textContent = wrong;
+  document.getElementById('cntSkip').textContent = skip;
+  document.getElementById('scorePct').textContent = pct + '%';
+
+  const r = 65;
+  const circumference = 2 * Math.PI * r;
+  const circle = document.getElementById('scoreCircle');
+  circle.style.strokeDasharray = circumference;
+  circle.style.strokeDashoffset = circumference;
+  setTimeout(() => {
+    circle.style.strokeDashoffset = circumference - (pct/100)*circumference;
+  }, 80);
+
+  let verdict, sub;
+  if(pct >= 85){ verdict = 'Excellent Preparation'; sub = 'You are performing at a strong, exam-ready level.'; }
+  else if(pct >= 65){ verdict = 'Good Standing'; sub = 'Solid grasp overall — a bit more revision will sharpen the edges.'; }
+  else if(pct >= 45){ verdict = 'Needs More Practice'; sub = 'You have a foundation; focused revision will raise your score quickly.'; }
+  else { verdict = 'Early Stage'; sub = 'Treat this as a baseline — revisit the syllabus areas below and try again.'; }
+
+  document.getElementById('verdict').textContent = verdict;
+  document.getElementById('verdictSub').textContent = sub;
+
+  const catWrap = document.getElementById('categoryBars');
+  catWrap.innerHTML = '';
+  Object.keys(catStats).forEach(cat => {
+    const stat = catStats[cat];
+    const catPct = Math.round((stat.correct/stat.total)*100);
+    const row = document.createElement('div');
+    row.className = 'cat-row';
+    row.innerHTML =
+      '<span class="cat-name">' + cat + '</span>' +
+      '<span class="cat-track"><span class="cat-fill" style="width:' + catPct + '%"></span></span>' +
+      '<span class="cat-pct">' + stat.correct + '/' + stat.total + '</span>';
+    catWrap.appendChild(row);
+  });
+}
+
+function showReview(){
+  reviewWrap.classList.add('active');
+  const list = document.getElementById('reviewList');
+  list.innerHTML = '';
+  const letters = ['A','B','C','D'];
+
+  QUESTIONS.forEach((q, idx) => {
+    const userAns = answers[idx];
+    const isCorrect = userAns === q.a;
+    const item = document.createElement('div');
+    item.className = 'review-item ' + (userAns === null ? 'bad' : (isCorrect ? 'ok' : 'bad'));
+
+    let tagHtml, answerLine;
+    if(userAns === null){
+      tagHtml = '<span class="tag bad">Skipped</span>';
+      answerLine = '<b>Correct answer:</b> ' + letters[q.a] + '. ' + q.opts[q.a];
+    } else if(isCorrect){
+      tagHtml = '<span class="tag ok">Correct</span>';
+      answerLine = '<b>Your answer:</b> ' + letters[userAns] + '. ' + q.opts[userAns];
+    } else {
+      tagHtml = '<span class="tag bad">Incorrect</span>';
+      answerLine = '<b>Your answer:</b> ' + letters[userAns] + '. ' + q.opts[userAns] + '<br><b>Correct answer:</b> ' + letters[q.a] + '. ' + q.opts[q.a];
+    }
+
+    item.innerHTML =
+      tagHtml +
+      '<div class="rq">' + (idx+1) + '. ' + q.q + '</div>' +
+      '<div class="ra">' + answerLine + '<br><br>' + q.ex + '</div>';
+    list.appendChild(item);
+  });
+
+  reviewWrap.scrollIntoView({behavior:'smooth', block:'start'});
+}
+
+function retake(){
+  resultsWrap.classList.remove('active');
+  reviewWrap.classList.remove('active');
+  document.getElementById('reviewList').innerHTML = '';
+  quizWrap.classList.remove('active');
+
+  selectorWrap.classList.remove('hidden');
+  brief.classList.remove('hidden');
+  masthead.classList.remove('hidden');
+  document.querySelector('.rule').classList.remove('hidden');
+
+  document.querySelectorAll('.subject-card').forEach(card => card.classList.remove('selected'));
+  selectedSubjectKey = null;
+  document.getElementById('startBtn').disabled = true;
+  document.getElementById('selectorHint').textContent = 'Select a subject above to begin.';
+
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+
+})();
+</script>
+</body>
+</html>
